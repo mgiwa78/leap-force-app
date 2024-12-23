@@ -7,7 +7,7 @@ interface IAppLayout {
 
 const AppLayout = ({ children }: IAppLayout) => {
   return (
-    <main className="max-w-6xl mx-auto py-2 px-3 lg:px-0 lg:py-4">
+    <main className="max-w-[1550px] mx-auto py-2 px-3 lg:px-0 lg:py-4">
       <Menu />
       <div className="mt-4">{children}</div>
     </main>

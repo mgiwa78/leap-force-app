@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { routerLinks } from "@/constants";
 import { RenderIf } from "@/components/hoc/RenderIf";
 import { Icon } from "@iconify/react";
 
 const Menu = () => {
   const token = null;
+
+  const navigate = useNavigate();
 
   return (
     <div className="flex justify-between items-center py-6 lg:px-4">
@@ -14,7 +16,13 @@ const Menu = () => {
 
       <div className="hidden lg:flex gap-x-8 uppercase text-sm">
         {routerLinks.map((link) => (
-          <NavLink key={link.url} className={``} to={link.url}>
+          <NavLink
+            key={link.url}
+            className={({ isActive }) =>
+              `text-sm text-type  ${isActive ? "font-bold" : "font-light"}`
+            }
+            to={link.url}
+          >
             {link.name}
           </NavLink>
         ))}
@@ -28,10 +36,16 @@ const Menu = () => {
 
         <RenderIf condition={!token}>
           <div className="flex items-center gap-x-3">
-            <button className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4">
+            <button
+              className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4 cursor-pointer"
+              onClick={() => navigate("/login")}
+            >
               Log in
             </button>
-            <button className="py-2 px-4 rounded-full bg-primary text-white">
+            <button
+              className="py-2 px-4 rounded-full bg-primary text-white cursor-pointer"
+              onClick={() => navigate("/register")}
+            >
               Sign up
             </button>
           </div>
