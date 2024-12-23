@@ -3,12 +3,15 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { routerLinks } from "@/constants";
 import { RenderIf } from "@/components/hoc/RenderIf";
 import MobileNavigation from "./mobileNav";
+import MenuDropdown from "./menuDropdown";
+import { Avatar } from "@/components/core/Avatar/Avatar";
 
 import { Icon } from "@iconify/react";
 
 const Menu = () => {
   const token = null;
   const [openNav, setOpenNav] = useState(false);
+  const profile: any = null;
 
   const navigate = useNavigate();
 
@@ -38,7 +41,7 @@ const Menu = () => {
           className="border-[0.5px] text-type h-5 w-5"
         />
 
-        <RenderIf condition={!token}>
+        <RenderIf condition={!!token}>
           <div className="hidden lg:flex items-center gap-x-1">
             <button
               className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4 cursor-pointer border-[0.5px] border-secondary "
@@ -54,6 +57,22 @@ const Menu = () => {
             </button>
           </div>
         </RenderIf>
+
+        <RenderIf condition={!token && !profile}>
+          <div className="hidden lg:flex items-center gap-x-3">
+            <Avatar
+              image={`${profile?.first_name} ${profile?.last_name}`}
+              size="40"
+            />
+            <div className="text-type text-[12px]">
+              <h1 className="capitalize font-semibold">{`${profile?.first_name} ${profile?.last_name}`}</h1>
+              <p>{profile?.email ?? ""}</p>
+            </div>
+
+            <MenuDropdown />
+          </div>
+        </RenderIf>
+
         <button className="block lg:hidden" onClick={() => setOpenNav(true)}>
           <Icon
             icon="material-symbols:menu-rounded"

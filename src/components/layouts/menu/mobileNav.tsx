@@ -22,7 +22,7 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
         }`}
       >
         <div className="py-8 px-5 ">
-          <div className="flex  justify-between">
+          <div className="flex justify-between">
             <NavLink to="/">
               <img src="/assets/leapforce.svg" alt="logo" />
             </NavLink>
