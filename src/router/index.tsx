@@ -1,5 +1,6 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "@/pages/home";
+import LoginPage from "@/pages/auth/login";
 import AppLayout from "@/components/layouts/appLayout";
 
 const router = createBrowserRouter([
@@ -10,7 +11,10 @@ const router = createBrowserRouter([
         <Outlet />
       </AppLayout>
     ),
-    children: [{ path: "", element: <Home /> }],
+    children: [
+      { path: "", element: <Home /> },
+      { path: "/login", element: <LoginPage /> },
+    ],
   },
 ]);
 

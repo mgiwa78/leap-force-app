@@ -41,16 +41,16 @@ const Menu = () => {
           className="border-[0.5px] text-type h-5 w-5"
         />
 
-        <RenderIf condition={!!token}>
-          <div className="hidden lg:flex items-center gap-x-1">
+        <RenderIf condition={!token}>
+          <div className="hidden lg:flex items-center gap-x-[3px]">
             <button
-              className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4 cursor-pointer border-[0.5px] border-secondary "
+              className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
               onClick={() => navigate("/login")}
             >
               Log in
             </button>
             <button
-              className="py-2 px-4 rounded-full bg-primary text-white cursor-pointer"
+              className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
               onClick={() => navigate("/register")}
             >
               Sign up
@@ -58,7 +58,7 @@ const Menu = () => {
           </div>
         </RenderIf>
 
-        <RenderIf condition={!token && !profile}>
+        <RenderIf condition={!!token && !!profile}>
           <div className="hidden lg:flex items-center gap-x-3">
             <Avatar
               image={`${profile?.first_name} ${profile?.last_name}`}

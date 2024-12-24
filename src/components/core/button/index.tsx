@@ -63,7 +63,7 @@ export default function CustomButton({
     <Button
       className={`cc-button capitalize ${size ? btn.sizes[size] : ""} ${
         theme ? btn.themes[theme] : ""
-      } ${disabled && "cursor-not-allowed"} ${className} rounded-[100px]`}
+      } ${disabled && "cursor-not-allowed"} ${className}`}
       onClick={onClick}
       disabled={disabled || loading}
       type={type}
