@@ -1,5 +1,5 @@
 .cc-button {
-  @apply flex items-center justify-center rounded-[8px] font-medium border cursor-pointer;
+  @apply flex items-center justify-center font-medium border cursor-pointer;
 }
 
 .cc-button--primary {
