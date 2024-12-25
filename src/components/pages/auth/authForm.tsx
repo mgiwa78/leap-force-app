@@ -20,7 +20,7 @@ const AuthForm = ({
 }: AuthFormInterface) => {
   return (
     <main
-      className={`${className}  ${maxWidth} mx-auto px-4 h-[80vh] pt-[21px] lg:pt-0 md:flex md:flex-col md:justify-center
+      className={`${className}  ${maxWidth} mx-auto px-4 min-h-[80vh] pt-[21px] lg:pt-0 md:flex md:flex-col md:justify-center
     `}
     >
       <div className="mb-8 md:mb-16">

@@ -123,7 +123,7 @@ export const InputComponent = ({
             if (type === "number") preventDecimalInput(e);
           }}
           className={`  ${variant}
-                    p-[12px] h-[40px] text-sm text-primary_100 w-full outline-0 border-grey_1 hide_tap border-1
+                    p-[12px] h-[40px] text-sm text-text2 w-full outline-0 border-grey_1 hide_tap border-1
                     rounded-[12px] focus:border-secondary_1 placeholder:text-[12px] ${
                       error ? "border-" : ""
                     }
@@ -141,9 +141,9 @@ export const InputComponent = ({
             className="flex items-center absolute top-0 right-[13.48px] cursor-pointer hide_tap h-full"
           >
             {!passwordView ? (
-              <Icon icon="ph:eye" className="w-4 h-4 text-primary_100" />
+              <Icon icon="ph:eye" className="w-4 h-4 text-text2" />
             ) : (
-              <Icon icon="ph:eye-slash" className="w-4 h-4 text-primary_100" />
+              <Icon icon="ph:eye-slash" className="w-4 h-4 text-text2" />
             )}
           </button>
         </RenderIf>

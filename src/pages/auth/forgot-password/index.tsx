@@ -9,7 +9,6 @@ const ForgotPasswordPage = () => {
     formData,
     errors,
     handleInputChange,
-    isFormValid,
     handleSubmit,
     isSuccess,
     isLoading,
@@ -40,7 +39,6 @@ const ForgotPasswordPage = () => {
                 className="w-[400px] rounded-[12px] h-[50px]"
                 theme="primary"
                 type="submit"
-                disabled={!isFormValid}
                 isLoading={isLoading}
               >
                 Submit

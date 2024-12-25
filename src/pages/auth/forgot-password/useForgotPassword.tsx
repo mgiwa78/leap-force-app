@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { z } from "zod";
+import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
 import { authService } from "@/services/modules/authServices";
 import toast from "react-hot-toast";
@@ -14,9 +14,14 @@ export default function useForgotPassword() {
 
   const [errors, setErrors] = useState<{ email?: string }>({});
 
-  // const formSchema = z.object({
-  //   email: z.string().email({ message: "Invalid email address" }),
-  // });
+  const formSchema = z.object({
+    email: z
+      .string({
+        required_error: "Email is required",
+        invalid_type_error: "Input must be an email",
+      })
+      .email({ message: "Invalid email address" }),
+  });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -30,21 +35,22 @@ export default function useForgotPassword() {
     }
   };
 
-  // const validateForm = () => {
-  //   try {
-  //     formSchema.parse(formData);
-  //     return true;
-  //   } catch (error) {
-  //     if (error instanceof z.ZodError) {
-  //       const fieldErrors: { email?: string; password?: string } = {};
-  //       error.errors.forEach((err) => {
-  //         if (err.path[0] === "email") fieldErrors.email = err.message;
-  //       });
-  //       setErrors(fieldErrors);
-  //     }
-  //     return false;
-  //   }
-  // };
+  const validateForm = () => {
+    try {
+      formSchema.parse(formData);
+
+      return true;
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const fieldErrors: { email?: string; password?: string } = {};
+        error.errors.forEach((err) => {
+          if (err.path[0] === "email") fieldErrors.email = err.message;
+        });
+        setErrors(fieldErrors);
+      }
+      return false;
+    }
+  };
 
   const {
     mutate,
@@ -62,9 +68,9 @@ export default function useForgotPassword() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // if (validateForm()) {
-    //   mutate(formData);
-    // }
+    if (validateForm()) {
+      //mutate(formData);
+    }
   };
 
   const isFormValid =
