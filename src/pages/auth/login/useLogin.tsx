@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { z } from "zod";
+import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { authService } from "@/services/modules/authServices";
@@ -19,10 +19,10 @@ export default function useLogin() {
     [key in keyof typeof formData]?: string;
   }>({});
 
-  // const LoginSchema = z.object({
-  //   email: z.string().email("Invalid email address"),
-  //   password: z.string().min(1, "Password must be at least 1 characters"),
-  // });
+  const LoginSchema = z.object({
+    email: z.string().email("Invalid email address"),
+    password: z.string().min(1, "Password must be at least 1 characters"),
+  });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -36,22 +36,22 @@ export default function useLogin() {
     }
   };
 
-  // const validateForm = () => {
-  //   try {
-  //     LoginSchema.parse(formData);
-  //     return true;
-  //   } catch (error) {
-  //     if (error instanceof z.ZodError) {
-  //       const fieldErrors: { email?: string; password?: string } = {};
-  //       error.errors.forEach((err) => {
-  //         if (err.path[0] === "email") fieldErrors.email = err.message;
-  //         if (err.path[0] === "password") fieldErrors.password = err.message;
-  //       });
-  //       setErrors(fieldErrors);
-  //     }
-  //     return false;
-  //   }
-  // };
+  const validateForm = () => {
+    try {
+      LoginSchema.parse(formData);
+      return true;
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const fieldErrors = error.errors.reduce((acc, curr) => {
+          const field = curr.path[0] as keyof typeof formData;
+          acc[field] = curr.message;
+          return acc;
+        }, {} as { [key in keyof typeof formData]?: string });
+        setErrors(fieldErrors);
+      }
+      return false;
+    }
+  };
 
   const { mutate, status: loginStatus } = useMutation({
     mutationFn: login,
@@ -72,16 +72,16 @@ export default function useLogin() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // if (validateForm()) {
-    //   mutate(formData);
-    // }
+    if (validateForm()) {
+      console.log(formData);
+      // mutate(formData);
+    }
   };
 
   return {
     formData,
     handleInputChange,
     errors,
-
     handleSubmit,
     rememberMe,
     setRememberMe,

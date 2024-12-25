@@ -20,7 +20,9 @@ export default function useForgotPassword() {
         required_error: "Email is required",
         invalid_type_error: "Input must be an email",
       })
-      .email({ message: "Invalid email address" }),
+      .email({
+        message: "Invalid email address entered",
+      }),
   });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -73,15 +75,12 @@ export default function useForgotPassword() {
     }
   };
 
-  const isFormValid =
-    formData.email.trim() !== "" && Object.keys(errors).length === 0;
-
   return {
     formData,
     errors,
     handleInputChange,
     handleSubmit,
-    isFormValid,
+
     isLoading: forgotPasswordStatus === "pending",
     isSuccess,
   };

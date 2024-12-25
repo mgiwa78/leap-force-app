@@ -8,13 +8,23 @@ import { Icon } from "@iconify/react";
 import Dropdown from "@/components/core/Dropdown";
 
 const RegistrationPage = () => {
-  const { countries, formData, setFormData, agree, setAgree } = useRegister();
+  const {
+    countries,
+    formData,
+    setFormData,
+    agree,
+    setAgree,
+    errors,
+    handleSubmit,
+    handleInputChange,
+    isLoading,
+  } = useRegister();
   return (
     <main>
       <AuthForm
         maxWidth="max-w-[1080px]"
         title="Create Account"
-        // onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
         subtitle="Create your account now!"
       >
         <div className="pb-10 ">
@@ -23,9 +33,9 @@ const RegistrationPage = () => {
               id="fullname"
               label="Full Name"
               name="fullname"
-              // value={formData?.fullname}
-              // onChange={handleInputChange}
-              // error={errors?.fullname}
+              value={formData?.fullname}
+              onChange={handleInputChange}
+              error={errors?.fullname}
               type="text"
               placeholder="Enter your full name"
             />
@@ -33,9 +43,9 @@ const RegistrationPage = () => {
               id="email"
               label="Email address"
               name="email"
-              // value={formData?.email}
-              // onChange={handleInputChange}
-              // error={errors?.email}
+              value={formData?.email}
+              onChange={handleInputChange}
+              error={errors?.email}
               type="email"
               placeholder="Enter your email address"
             />
@@ -44,44 +54,40 @@ const RegistrationPage = () => {
               label="Phone Number"
               name="phone_number"
               max={11}
-              // value={formData?.phone_number}
-              // onChange={handleInputChange}
+              value={formData?.phone_number}
+              onChange={handleInputChange}
               type="tel"
               placeholder="Enter your phone number"
-              // error={errors?.phone_number}
+              error={errors?.phone_number}
             />
-            <Dropdown
-              options={countries}
-              label="Country"
-              id="country"
-              selected={formData?.country}
-              onSelect={(data: any) => {
-                setFormData({
-                  ...formData,
-                  country: data?.value,
-                });
-              }}
-              placeholder="Select your country of residence"
-            />
-            {/* <InputComponent
-            id="Country"
-            label="Country"
-            name="country"
-            value={formData?.country}
-            onChange={handleInputChange}
-            type="text"
-            placeholder="Enter your country of residence"
-            error={errors?.country}
-          /> */}
+            <div>
+              <Dropdown
+                options={countries}
+                label="Country"
+                id="country"
+                selected={formData?.country}
+                onSelect={(data: any) => {
+                  setFormData({
+                    ...formData,
+                    country: data?.value,
+                  });
+                }}
+                placeholder="Select your country of residence"
+              />
+              {errors?.country && (
+                <p className="text-xs text-error">{errors?.country}</p>
+              )}
+            </div>
+
             <InputComponent
               id="password"
               label="Create Password"
               name="password"
               type="password"
               placeholder="Enter your password"
-              // value={formData?.password}
-              // onChange={handleInputChange}
-              // error={errors?.password}
+              value={formData?.password}
+              onChange={handleInputChange}
+              error={errors?.password}
             />
             <InputComponent
               id="confirm_password"
@@ -89,9 +95,9 @@ const RegistrationPage = () => {
               name="confirm_password"
               type="password"
               placeholder="Enter your password"
-              // value={formData?.confirm_password}
-              // onChange={handleInputChange}
-              // error={errors?.confirm_password}
+              value={formData?.confirm_password}
+              onChange={handleInputChange}
+              error={errors?.confirm_password}
             />
             <Checkbox
               id="agree"

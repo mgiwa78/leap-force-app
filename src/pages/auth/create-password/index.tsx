@@ -9,7 +9,6 @@ const CreatePassword = () => {
     formErrors,
     handleInputChange,
     handleChangePassword,
-    isDisabled,
     isLoading,
   } = useCreatePassword();
   return (
@@ -47,7 +46,6 @@ const CreatePassword = () => {
             className="w-[400px] rounded-full h-[50px]"
             theme="primary"
             type="submit"
-            disabled={isDisabled}
             isLoading={isLoading}
           >
             Submit

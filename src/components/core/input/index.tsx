@@ -124,9 +124,7 @@ export const InputComponent = ({
           }}
           className={`  ${variant}
                     p-[12px] h-[40px] text-sm text-text2 w-full outline-0 border-grey_1 hide_tap border-1
-                    rounded-[12px] focus:border-secondary_1 placeholder:text-[12px] ${
-                      error ? "border-" : ""
-                    }
+                    rounded-[12px] focus:border-secondary_1 placeholder:text-[12px]
                     ${disabled ? "bg-grey-50" : "bg-[#F1F1F1]"} ${
             leftIcon ? "pl-10" : ""
           } ${rightIcon ? "pr-10" : ""}
@@ -154,7 +152,7 @@ export const InputComponent = ({
         </RenderIf>
       </div>
       <RenderIf condition={!!error}>
-        <span className="w-full text-right text-xs text-primary open-sans">
+        <span className="w-full text-right text-xs text-error open-sans">
           {error}
         </span>
       </RenderIf>
