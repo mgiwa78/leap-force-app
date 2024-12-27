@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import ContactUsForm from "@/components/pages/support/contact-us/contact-form";
+import Faq from "@/components/pages/support/contact-us/faq";
 
 const ContactUsPage = () => {
   return (
@@ -62,6 +63,8 @@ const ContactUsPage = () => {
 
         <ContactUsForm />
       </div>
+
+      <Faq />
     </main>
   );
 };

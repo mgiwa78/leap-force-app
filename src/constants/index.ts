@@ -73,3 +73,38 @@ export const supportContent = [
     href: "/contact-us",
   },
 ];
+
+export const faqs = [
+  {
+    question:
+      "How do I book a flight or accommodation through Leapforce Travel?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+
+  {
+    question: "Can I book as a guest, or do I need to create an account?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+  {
+    question: "How do I modify or cancel my booking?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+  {
+    question: "Is my payment information secure?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+  {
+    question: "When will I be charged for my booking?",
+    answer:
+      "You can book by selecting “Flights” or “Accommodations” on our homepage, filling out your travel details, and following the prompts. If you need assistance, reach out to us via live chat or contact form.",
+  },
+];
