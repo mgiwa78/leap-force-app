@@ -32,7 +32,7 @@ const Footer = () => {
       whileInView="show"
       viewport={{ once: true }}
       variants={container}
-      className="w-full bg-[#F4F9FD] rounded-3xl p-12 md:p-[100px]"
+      className="w-full bg-[#F4F9FD] rounded-3xl my-[70px] p-12 md:p-[100px]"
     >
       <motion.div className="grid grid-cols-1 md:grid-cols-5 gap-10">
         <motion.div
