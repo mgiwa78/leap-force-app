@@ -48,7 +48,7 @@ const ContactUsForm = () => {
             onChange={handleInputChange}
             error={errors?.subject}
           />
-          <div className="col-span-2 flex flex-col gap-2">
+          <div className="col-span-1 lg:col-span-2 flex flex-col gap-2">
             <label htmlFor="message" className="text-xs">
               Message
             </label>
