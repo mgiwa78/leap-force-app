@@ -6,6 +6,8 @@ import RegistrationPage from "@/pages/auth/register";
 import ForgotPasswordPage from "@/pages/auth/forgot-password";
 import ContactUsPage from "@/pages/support/contact-us";
 import CreatePassword from "@/pages/auth/create-password";
+import VisaPage from "@/pages/visas";
+import CarHirePage from "@/pages/car-hire";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,8 @@ const router = createBrowserRouter([
         element: <CreatePassword />,
       },
       { path: "/contact-us", element: <ContactUsPage /> },
+      { path: "/visa", element: <VisaPage /> },
+      { path: "/car-hire", element: <CarHirePage /> },
     ],
   },
 ]);
