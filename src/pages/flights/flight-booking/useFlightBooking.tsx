@@ -3,7 +3,7 @@ import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import { GenericError } from "@/types";
-import { flightService } from "@/services/modules/FlightService";
+import { flightService } from "@/services/modules/flightService";
 
 const currentDate = new Date();
 

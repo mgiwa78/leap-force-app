@@ -1,7 +1,10 @@
 import CustomButton from "@/components/core/button";
 import HomeAccomodation from "@/components/pages/accommodation/accommodation";
 import RentalsDeals from "@/components/pages/accommodation/rentalDeals";
+import { useNavigate } from "react-router";
+
 const AccommodationPage = () => {
+  const navigate = useNavigate()
   return (
     <main>
       <div className="min-h-[500px] w-full mx-auto bg-secondary/10 rounded-[32px] px-8 relative py-7">
@@ -19,6 +22,7 @@ const AccommodationPage = () => {
               <CustomButton
                 theme="primary"
                 className="bg-[#A2B053] hover:bg-[#8A9647] text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
+                onClick={() => navigate("/hotel-booking")}
               >
                 Book Hotel
               </CustomButton>

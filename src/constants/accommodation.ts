@@ -42,3 +42,10 @@ export const rentalDeals = [
     rating: 4.5,
   },
 ];
+
+export const roomTypeOptions = [
+  { label: "Single Room", value: "single room" },
+  { label: "Double Room", value: "double room" },
+  { label: "Condo", value: "condo" },
+  { label: "Luxury Suite", value: "luxury suite" },
+];
