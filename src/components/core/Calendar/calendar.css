@@ -1,8 +1,9 @@
 .custom-datepicker {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 10px;
+  height: 40px;
   width: 100%;
   font-size: 16px;
   color: #333;
@@ -10,5 +11,5 @@
 
 .custom-datepicker::placeholder {
   color: #999;
-  font-style: italic;
+  font-size: 12px;
 }

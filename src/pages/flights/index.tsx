@@ -1,7 +1,10 @@
 import CustomButton from "@/components/core/button";
 import RentalsDeals from "@/components/pages/accommodation/rentalDeals";
+import { useNavigate } from "react-router";
 
 const FlightsPage = () => {
+  const navigate = useNavigate();
+
   return (
     <main>
       <div className="h-[550px] w-full mx-auto bg-secondary_1 rounded-[32px] px-8 relative overflow-hidden">
@@ -15,7 +18,7 @@ const FlightsPage = () => {
                 Find the perfect flight in minutes with our simple and intuitive
                 form.
               </p>
-              <CustomButton className="bg-primary border-none text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
+              <CustomButton className="bg-primary border-none text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6" onClick={() => navigate("/flight-assistance")}>
                 Book your flight now
               </CustomButton>
             </div>
@@ -56,7 +59,7 @@ const FlightsPage = () => {
               Let us handle it! Share your details, and we'll find flights
               tailored just for you.
             </p>
-            <button className="rounded-full bg-white text-sm lg:text-base text-primary px-3 py-[6px] lg:px-[24px] lg:py-[12px]">
+            <button className="rounded-full bg-white text-sm lg:text-base text-primary px-3 py-[6px] lg:px-[24px] lg:py-[12px]" onClick={() => navigate("/flight-assistance")}>
               Start Now!
             </button>
           </div>

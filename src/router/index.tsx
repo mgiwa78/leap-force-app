@@ -10,6 +10,7 @@ import VisaPage from "@/pages/visas";
 import CarHirePage from "@/pages/car-hire";
 import AccommodationPage from "@/pages/accommodation";
 import FlightsPage from "@/pages/flights";
+import FlightBooking from "@/pages/flights/flight-booking";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "/car-hire", element: <CarHirePage /> },
       { path: "/accommodation", element: <AccommodationPage /> },
       { path: "/flight", element: <FlightsPage /> },
+      { path: "/flight-assistance", element: <FlightBooking /> },
     ],
   },
 ]);

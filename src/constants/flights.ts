@@ -95,3 +95,17 @@ export const destinations: Destination[] = [
     rating: 4.6,
   },
 ];
+
+export const travelClassOptions = [
+  { label: "Business", value: "business" },
+  { label: "Economy", value: "economy" },
+  { label: "First Class", value: "first class" },
+];
+
+export const passengersNumberOptions = [
+  { label: "1 Passenger", value: "1" },
+  { label: "2 Passengers", value: "2" },
+  { label: "3 Passengers", value: "3" },
+  { label: "4 Passengers", value: "4" },
+  { label: "5 Passengers", value: "5" },
+];
