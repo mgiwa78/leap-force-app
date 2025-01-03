@@ -38,7 +38,7 @@ const Testimonials = () => {
   }, [visibleCount]);
 
   return (
-    <div>
+    <div className="">
       <h1
         className="text-secondary_1 font-semibold text-xl lg
       :text-4xl text-center"
@@ -46,16 +46,16 @@ const Testimonials = () => {
         Testimonials{" "}
       </h1>
 
-      <div className="mb-20 grid md:grid-cols-3 gap-8">
+      <div className="mb-20 grid md:grid-cols-3 gap-8 ">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
           <div
             key={index}
             ref={(el) => (testimonialRefs.current[index] = el)}
             className={`${
               (index + 1) % 3 === 2 ? "bg-secondary_1" : "bg-[#F4F4F4]"
-            } px-1  text-xs  rounded-lg shadow-sm transform translate-y-10 opacity-0 transition-all duration-700 ease-out delay-300`}
+            } px-1 py-1 text-xs  rounded-xl shadow-sm transform translate-y-10 opacity-0 transition-all duration-700 ease-out delay-300`}
           >
-            <div className="bg-white p-3 min-h-[100px]">
+            <div className="bg-white p-3 min-h-[100px] rounded-xl">
               <p
                 className={`
                 text-[#7A7A7A]
