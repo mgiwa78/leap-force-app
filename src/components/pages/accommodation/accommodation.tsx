@@ -19,23 +19,26 @@ export default function HomeAccomodation() {
     <div className="bg-[#FAFAFA] p-12 rounded-lg mb-[100px]">
       <div className="">
         <RenderIf condition={!isRouteMatch}>
-          <div className="flex flex-col lg:flex-row gap-4 justify-between items-start mb-12">
+          <div className="flex flex-col lg:flex-row gap-4 justify-between  mb-12">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Accommodation
-                <br />
-                Reservations
+              <h1 className="text-secondary_1 text-2xl md:text-4xl font-bold tracking-tight">
+                Accommodation Reservations
               </h1>
               <p className="text-muted-foreground text-lg">
-                Find and book your perfect stay with options for every budget.
+                Dreaming of the perfect getaway? Explore stays handpicked to
+                <br />
+                match your comfort, style, and budget. Let’s find your ideal
+                home away from home!
               </p>
             </div>
-            <CustomButton
-              className="hidden md:inline-flex bg-primary shadow transition-colors hover:bg-primary/90 text-white text-sm lg:text-base rounded-full px-4 py-2 lg:px-[24px] lg:py-[12px]"
-              onClick={() => handleRouting()}
-            >
-              Book an hotel!
-            </CustomButton>
+            <div className="">
+              <CustomButton
+                className="hidden md:inline-flex bg-primary shadow transition-colors hover:bg-primary/90 text-white text-sm lg:text-base rounded-full px-4 py-2 lg:px-[24px] lg:py-[12px]"
+                onClick={() => handleRouting()}
+              >
+                Book an hotel!
+              </CustomButton>
+            </div>
           </div>
         </RenderIf>
 
