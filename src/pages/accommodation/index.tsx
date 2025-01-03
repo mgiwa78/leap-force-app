@@ -1,12 +1,10 @@
 import CustomButton from "@/components/core/button";
-import { rentalDeals } from "@/constants/accommodation";
-import ImageCard from "@/components/core/Imagecard";
 import HomeAccomodation from "@/components/pages/accommodation/accommodation";
 import RentalsDeals from "@/components/pages/accommodation/rentalDeals";
 const AccommodationPage = () => {
   return (
     <main>
-      <div className="h-[500px] w-full mx-auto bg-secondary/10 rounded-[32px] ">
+      <div className="min-h-[500px] w-full mx-auto bg-secondary/10 rounded-[32px] px-8 relative py-7">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
           <div className="flex items-center pl-16">
             <div className="space-y-6">
@@ -31,8 +29,7 @@ const AccommodationPage = () => {
             <img
               src="/assets/images/home-hotel.webp"
               alt="home hotel"
-              height="800px"
-              className="w-full  object-contain lg:translate-x-12"
+              className="w-full max-h-[100%] md:h-[95%] object-contain lg:translate-x-12"
             />
           </div>
         </div>

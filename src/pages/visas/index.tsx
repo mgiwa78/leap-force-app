@@ -25,7 +25,7 @@ const VisaPage = () => {
             <img
               src="/assets/images/home-visa.webp"
               alt="home visa"
-              className="max-h-full w-auto object-contain"
+              className="max-h-[90%] lg:h-[95%] w-auto object-contain"
             />
           </div>
         </div>

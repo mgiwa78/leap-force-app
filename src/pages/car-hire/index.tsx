@@ -30,8 +30,8 @@ const CarHirePage = () => {
             <img
               src="/assets/images/home-car.webp"
               alt="home car"
-              className="max-h-[120%] w-auto object-contain "
-              style={{ transform: "rotate(-180deg)" }}
+              className="max-h-[90%] lg:h-[95%]  w-auto object-contain "
+              style={{ transform: "rotate(30deg)" }}
             />
           </div>
         </div>

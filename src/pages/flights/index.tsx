@@ -37,6 +37,30 @@ const FlightsPage = () => {
           Top Rental Deals
         </h1>
         <RentalsDeals />
+
+        <div className="bg-secondary_1 min-h-[608px] my-[100px] rounded-[48px] px-6 py-10 lg:pb-0 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:flex-row justify-center items-center">
+          <div className="flex justify-center">
+            <div className="relative border-[22px] rounded-full border-[#FFFFFF57]/40 w-[324px] h-[324px]  flex-shrink-0 overflow-hidden">
+              <img
+                src="/assets/images/book-flights.webp"
+                alt="flights"
+                className="w-full h-full object-cover absolute inset-0"
+              />
+            </div>
+          </div>
+          <div className="text-white space-y-4">
+            <h1 className="text-2xl lg:text-4xl font-bold">
+              Looking for the best flight options?
+            </h1>
+            <p className="text-base leading-[25.6px]">
+              Let us handle it! Share your details, and we'll find flights
+              tailored just for you.
+            </p>
+            <button className="rounded-full bg-white text-sm lg:text-base text-primary px-3 py-[6px] lg:px-[24px] lg:py-[12px]">
+              Start Now!
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   );
