@@ -16,3 +16,9 @@ export const CarOptions = [
     value: "Exotic",
   },
 ];
+
+export const dealOptions = [
+  { label: "Airport Pickup and Dropoff", value: "airport pickup & dropoff" },
+  { label: "12hrs service", value: "12hrs service" },
+  { label: "24hrs Service", value: "24hrs Service" },
+];
