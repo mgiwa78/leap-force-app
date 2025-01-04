@@ -49,7 +49,8 @@ export default function useFlightAssitance() {
       phone_number: z
         .string()
         .nonempty("Phone number is required")
-        .regex(/^\+?\d{10,15}$/, "Invalid phone number format"),
+        .regex(/^\+?\d{10,15}$/, "Invalid phone number format")
+        .max(12, "Phone Number should not be longer than 11 digits"),
       location: z.string().nonempty("Location is required"),
       destination: z.string().nonempty("Destination is required"),
       number_of_passengers: z
@@ -95,6 +96,8 @@ export default function useFlightAssitance() {
     }
   };
 
+  console.log(formData);
+
   const { mutate: flightAssistanceMutation, status: flightAssistanceStatus } =
     useMutation({
       mutationFn: flightAssistance,
@@ -109,8 +112,6 @@ export default function useFlightAssitance() {
       },
     });
 
-  console.log(errors);
-
   const handleSubmitForm = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -124,9 +125,9 @@ export default function useFlightAssitance() {
         last_name,
       };
 
-      console.log(formattedData);
+      console.log("we are here >>", formattedData);
 
-      // flightAssistanceMutation(formattedData);
+      flightAssistanceMutation(formattedData);
     }
   };
 
