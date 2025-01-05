@@ -43,7 +43,7 @@ export default function useCarRental() {
         .string()
         .nonempty("Number of days is required.")
         .refine((val) => !isNaN(Number(val)), { message: "Must be a number." }),
-      deals: z.string().optional(),
+      deals: z.string().nonempty("Deals is required"),
       destination: z.string().nonempty("Destination is required."),
       pickup_location: z.string().nonempty("Pickup location is required."),
       drop_off_location: z.string().optional(),

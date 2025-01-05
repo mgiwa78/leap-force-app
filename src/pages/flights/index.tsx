@@ -18,7 +18,10 @@ const FlightsPage = () => {
                 Find the perfect flight in minutes with our simple and intuitive
                 form.
               </p>
-              <CustomButton className="bg-primary border-none text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6" onClick={() => navigate("/flight-assistance")}>
+              <CustomButton
+                className="bg-primary border-none text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
+                onClick={() => navigate("/flight-assistance")}
+              >
                 Book your flight now
               </CustomButton>
             </div>
@@ -27,8 +30,8 @@ const FlightsPage = () => {
           <div className="h-full flex items-end justify-center lg:absolute lg:right-0 lg:bottom-0 ">
             <img
               src="/assets/images/home-flights.png"
-              alt="home visa"
-              className="max-h-full w-auto object-contain rotate-[-32.81] transform"
+              alt="home flights"
+              className="max-h-[90%] md:h-[95%] w-auto object-contain rotate-[-32.81] transform"
               style={{ transform: "rotate(32.81deg)" }}
             />
           </div>
@@ -59,7 +62,10 @@ const FlightsPage = () => {
               Let us handle it! Share your details, and we'll find flights
               tailored just for you.
             </p>
-            <button className="rounded-full bg-white text-sm lg:text-base text-primary px-3 py-[6px] lg:px-[24px] lg:py-[12px]" onClick={() => navigate("/flight-assistance")}>
+            <button
+              className="rounded-full bg-white text-sm lg:text-base text-primary px-3 py-[6px] lg:px-[24px] lg:py-[12px]"
+              onClick={() => navigate("/flight-assistance")}
+            >
               Start Now!
             </button>
           </div>

@@ -81,6 +81,7 @@ export default function useFlightAssitance() {
   const validateForm = () => {
     try {
       flightAssistanceSchema.parse(formData);
+      setErrors({});
       return true;
     } catch (error) {
       // const errors: { [key in keyof typeof formData]?: string } = {};
