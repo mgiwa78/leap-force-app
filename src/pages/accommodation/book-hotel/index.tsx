@@ -147,7 +147,7 @@ const HotelBooking = () => {
         <div className="flex justify-center pt-10">
           <CustomButton
             type="submit"
-            isLoading={isLoading}
+            loading={isLoading}
             size="44"
             className="bg-primary hover:bg-primary/90 text-white px-10 lg:px-20 rounded-md"
           >

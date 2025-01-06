@@ -1,6 +1,9 @@
 import CustomButton from "@/components/core/button";
+import { useNavigate } from "react-router-dom";
 
 const VisaPage = () => {
+  const navigate = useNavigate();
+
   return (
     <main>
       <div className="h-[600px] w-full mx-auto bg-[#E6E9CD] rounded-[32px] px-8 relative overflow-hidden">
@@ -15,7 +18,10 @@ const VisaPage = () => {
                 Simplify your visa application process with expert assistance
                 from Leapforce Travels.
               </p>
-              <CustomButton className="bg-secondary text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
+              <CustomButton
+                onClick={() => navigate("/visa-application")}
+                className="bg-secondary text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
+              >
                 Get Visa Help Now
               </CustomButton>
             </div>

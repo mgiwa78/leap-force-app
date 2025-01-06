@@ -2,7 +2,7 @@ import { InputComponent } from "@/components/core/input";
 import Dropdown from "@/components/core/Dropdown";
 import CustomButton from "@/components/core/button";
 import { dealOptions } from "@/constants/form-options";
-import { Textarea } from "@headlessui/react";
+// import { Textarea } from "@headlessui/react";
 import { RenderIf } from "@/components/hoc/RenderIf";
 import useCarRental from "./useCarHire";
 import CalendarInput from "@/components/core/Calendar/Calendar";
