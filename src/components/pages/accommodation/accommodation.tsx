@@ -20,6 +20,9 @@ export default function HomeAccomodation() {
       <div className="">
         <RenderIf condition={!isRouteMatch}>
           <div className="mb-12">
+            <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-base">
+              HOTEL RESERVATION
+            </h1>
             <div className="space-y-4">
               <h1 className="text-primary text-2xl md:text-4xl font-bold tracking-tight">
                 Access the best deals from top hotels worldwide.
