@@ -40,7 +40,7 @@ const Testimonials = () => {
   return (
     <div className="">
       <h1
-        className="text-secondary_1 font-semibold text-xl lg
+        className="text-primary font-semibold text-xl lg
       :text-4xl text-center"
       >
         Testimonials{" "}
@@ -52,7 +52,7 @@ const Testimonials = () => {
             key={index}
             ref={(el) => (testimonialRefs.current[index] = el)}
             className={`${
-              (index + 1) % 3 === 2 ? "bg-secondary_1" : "bg-[#F4F4F4]"
+              (index + 1) % 3 === 2 ? "bg-primary" : "bg-[#F4F4F4]"
             } px-1 py-1 text-xs  rounded-xl shadow-sm transform translate-y-10 opacity-0 transition-all duration-700 ease-out delay-300`}
           >
             <div className="bg-white p-3 min-h-[100px] rounded-xl">

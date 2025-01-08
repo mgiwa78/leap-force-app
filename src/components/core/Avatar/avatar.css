@@ -1,5 +1,5 @@
 .cc-avatar {
-  @apply grid justify-items-center text-white content-center bg-primary rounded-full overflow-hidden;
+  @apply grid justify-items-center text-white content-center bg-secondary_1 rounded-full overflow-hidden;
 }
 
 .cc-avatar--image {
