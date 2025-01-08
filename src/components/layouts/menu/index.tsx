@@ -26,7 +26,9 @@ const Menu = () => {
           <NavLink
             key={link.url}
             className={({ isActive }) =>
-              `text-sm text-type  ${isActive ? "font-bold" : "font-light"}`
+              `text-sm text-type  ${
+                isActive && link.link ? "font-bold" : "font-light"
+              }`
             }
             to={link.url}
           >
