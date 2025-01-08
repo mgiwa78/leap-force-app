@@ -52,7 +52,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="bg-white min-h-[700px]">
+      <div className="bg-white min-h-[700px]">
         <div className="max-w-5xl mx-auto py-[100px]">
           <DestinationCarousel />
         </div>
@@ -64,23 +64,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-white">
+      {/* <div className="bg-white">
         <div className="max-w-5xl mx-auto py-[100px]">
           <ServiceOptions />
         </div>
-      </div>
+      </div> */}
 
-      <div className="max-w-5xl mx-auto">
+      {/* <div className="max-w-5xl mx-auto">
         <Newsletter />
-      </div>
+      </div> */}
 
-      <div className="">
+      {/* <div className="">
         <div className="max-w-5xl mx-auto py-[100px]">
           <Dreams />
         </div>
-      </div>
+      </div> */}
 
-      <div className="">
+      {/* <div className="">
         <div className="max-w-5xl mx-auto py-[100px]">
           <Testimonials />
         </div>

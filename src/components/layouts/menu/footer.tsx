@@ -139,9 +139,10 @@ const Footer = () => {
 
       <motion.div
         variants={item}
-        className="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm"
+        className="mt-16 pt-8 border-t border-gray-200 text-center text-white text-sm"
       >
-        ©{new Date().getFullYear()} 315 Travels & Tours. All rights reserved.
+        © {new Date().getFullYear()} Leapforce Travels Limited. All rights
+        reserved.
       </motion.div>
     </motion.footer>
   );

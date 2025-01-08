@@ -43,37 +43,20 @@ const Menu = () => {
           className="border-[0.5px] text-type h-5 w-5"
         />
 
-        <RenderIf condition={!token}>
-          <div className="hidden lg:flex items-center gap-x-[3px]">
-            <button
-              className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
-              onClick={() => navigate("/login")}
-            >
-              Log in
-            </button>
-            <button
-              className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
-              onClick={() => navigate("/register")}
-            >
-              Sign up
-            </button>
-          </div>
-        </RenderIf>
-
-        <RenderIf condition={!!token && !!profile}>
-          <div className="hidden lg:flex items-center gap-x-3">
-            <Avatar
-              image={`${profile?.first_name} ${profile?.last_name}`}
-              size="40"
-            />
-            <div className="text-type text-[12px]">
-              <h1 className="capitalize font-semibold">{`${profile?.first_name} ${profile?.last_name}`}</h1>
-              <p>{profile?.email ?? ""}</p>
-            </div>
-
-            <MenuDropdown />
-          </div>
-        </RenderIf>
+        <div className="hidden lg:flex items-center gap-x-2">
+          <button
+            className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
+            onClick={() => navigate("#contact")}
+          >
+            Contact Us
+          </button>
+          <button
+            className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
+            onClick={() => navigate("/register")}
+          >
+            Book a trip
+          </button>
+        </div>
 
         <button className="block lg:hidden" onClick={() => setOpenNav(true)}>
           <Icon
