@@ -24,23 +24,23 @@ export const companyDetails = [
 
 export const socialLinks = [
   {
-    icon: "ph:phone-call",
+    icon: "cib:linkedin",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:facebook",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:instagram",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:twitter",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:youtube",
     url: "",
   },
 ];

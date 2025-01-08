@@ -69,13 +69,13 @@ const Footer = () => {
             {socialLinks?.map((social, index) => (
               <motion.a
                 key={index + 1333}
-                className="rounded-full p-1 border-[0.4px] border-secondary"
+                className="rounded-full p-[6px] border-[0.4px] border-[#9CA73A]"
               >
                 <Icon
                   width="12"
                   height="12"
                   icon={social.icon}
-                  className="text-secondary_1"
+                  className="text-[#9CA73A]"
                 />
               </motion.a>
             ))}
