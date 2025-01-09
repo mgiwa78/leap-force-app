@@ -5,6 +5,7 @@ import ServiceOptions from "@/components/pages/home/service-options";
 import Newsletter from "@/components/pages/home/newsletter";
 import Dreams from "@/components/pages/home/dreams";
 import Testimonials from "@/components/pages/home/testimonials";
+import ContactUsPage from "../support/contact-us";
 
 const Home = () => {
   return (
@@ -83,6 +84,12 @@ const Home = () => {
       <div className="">
         <div className="max-w-5xl mx-auto py-[100px]">
           <Dreams />
+        </div>
+      </div>
+
+      <div>
+        <div className="max-w-5xl mx-auto py-[100px]">
+          <ContactUsPage />
         </div>
       </div>
     </main>

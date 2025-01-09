@@ -35,9 +35,9 @@ const Dreams = () => {
         >
           <div className="relative order-1 lg:order-2">
             <div className=" rounded-[32px] overflow-hidden h-full p-4">
-              <div className="aspect-[5/6] relative">
+              <div className="aspect-[4/4] relative">
                 <img
-                  src="./assets/images/home/dreams.webp"
+                  src="./assets/images/home/tourist.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover rounded-[24px]"
                 />
