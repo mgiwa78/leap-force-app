@@ -30,7 +30,7 @@ const ServiceOptions = () => {
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -74,17 +74,17 @@ const ServiceOptions = () => {
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="relative">
-            <div className=" bg-[#E1E1E1] rounded-[32px] overflow-hidden h-full p-4">
-              <div className=" aspect-[6/7] relative">
+            <div className="overflow-hidden h-full p-4">
+              <div className="aspect-[6/8] relative">
                 <img
-                  src="/assets/images/home-car.webp"
+                  src="/assets/images/home/young couple.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-contain rounded-[24px] absolute"
+                  className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}
                 />
               </div>
@@ -119,7 +119,7 @@ const ServiceOptions = () => {
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -145,13 +145,14 @@ const ServiceOptions = () => {
               Get Started
             </CustomButton>
           </div>
+
           <div className="relative">
-            <div className=" bg-[#E1E1E1] rounded-[32px] overflow-hidden h-full p-4">
-              <div className=" aspect-[6/7] relative">
+            <div className="overflow-hidden h-full p-4">
+              <div className="h-full aspect-[5/6] relative">
                 <img
-                  src="/assets/images/home-car.webp"
+                  src="/assets/images/home/adventure king.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-contain rounded-[24px] absolute"
+                  className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}
                 />
               </div>
@@ -163,17 +164,17 @@ const ServiceOptions = () => {
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="relative">
-            <div className=" bg-[#E1E1E1] rounded-[32px] overflow-hidden h-full p-4">
-              <div className=" aspect-[6/7] relative">
+            <div className="rounded-[32px] overflow-hidden h-full p-4">
+              <div className="h-full aspect-[6/7] relative">
                 <img
-                  src="/assets/images/home-car.webp"
+                  src="/assets/images/home/visa-hold.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-contain rounded-[24px] absolute"
+                  className="w-full h-full object-cover rounded-[24px] absolute"
                   style={{ transform: "rotate(360deg)" }}
                 />
               </div>
