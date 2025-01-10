@@ -6,6 +6,7 @@ import Newsletter from "@/components/pages/home/newsletter";
 import Dreams from "@/components/pages/home/dreams";
 import Testimonials from "@/components/pages/home/testimonials";
 import ContactUsPage from "../support/contact-us";
+import ChooseLeapforce from "@/components/pages/home/why-choose";
 
 const Home = () => {
   return (
@@ -69,6 +70,10 @@ const Home = () => {
         <div className="max-w-5xl mx-auto py-[100px]">
           <ServiceOptions />
         </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto py-[100px]">
+        <ChooseLeapforce />
       </div>
 
       <div className="">
