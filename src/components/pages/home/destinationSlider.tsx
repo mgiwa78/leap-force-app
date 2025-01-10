@@ -68,27 +68,30 @@ export default function DestinationCarousel() {
   return (
     <div className="relative">
       {/* Header */}
+      <p className="pb-6 lg:pb-12 text-black font-light">
+        Our Services at a Glance
+      </p>
       <div className="flex md:justify-between mb-[48px]">
         <div className="space-y-3">
-          <h1 className="text-2xl lg:text-[36px] lg:leading-[43.2px] text-secondary_1 font-bold">
-            Discover Popular Destinations
+          <h1 className="text-2xl lg:text-[36px] lg:leading-[43.2px] text-primary font-bold">
+            Comprehensive Travel Solutions at Your Fingertips
           </h1>
           <p className="text-xs lg:text-base text-black">
-            Find and book your perfect stay with options for every budget.
+            Real-time flight schedules and cost-effective tickets.
           </p>
         </div>
         {!isMobile && (
           <div className="flex justify-end items-center">
             <button
               onClick={slideLeft}
-              className="mr-4 rounded-full bg-[#E0EBF5] w-[48px] h-[48px] transition-colors hover:bg-gray-300 flex items-center justify-center"
+              className="mr-4 rounded-full bg-[#F5F6E7] w-[48px] h-[48px] transition-colors hover:bg-gray-300 flex items-center justify-center"
               aria-label="Previous slide"
             >
               <Icon icon="ph:caret-left" className="h-6 w-6 text-[#292D32]" />
             </button>
             <button
               onClick={slideRight}
-              className="rounded-full bg-secondary_1 p-3 transition-colors hover:bg-gray-300 flex items-center justify-center"
+              className="rounded-full bg-primary p-3 transition-colors hover:bg-gray-300 flex items-center justify-center"
               aria-label="Next slide"
             >
               <Icon icon="ph:caret-right" className="h-6 w-6 text-white" />
@@ -116,7 +119,7 @@ export default function DestinationCarousel() {
               key={destination.id}
               className="flex-shrink-0 w-full md:w-1/3 px-3 transition-all"
             >
-              <div className="bg-secondary_1/5 rounded-[48px] shadow-md p-4 mb-5">
+              <div className="bg-[#9CA73A0D]/5 rounded-[24px] shadow-md p-6 mb-5">
                 <img
                   src={destination.image}
                   alt={destination.title}
@@ -131,7 +134,7 @@ export default function DestinationCarousel() {
                     {destination.price}
                   </p>
                   <div className="flex items-center gap-1">
-                    <span className="text-secondary_1 text-xs">★</span>
+                    <span className="text-primary text-xs">★</span>
                     <span className="font-medium text-xs">
                       {destination.rating}/5.0
                     </span>
