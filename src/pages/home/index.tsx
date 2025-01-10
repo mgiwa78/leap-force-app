@@ -92,7 +92,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div id="contact">
         <div className="max-w-5xl mx-auto py-[100px]">
           <ContactUsPage />
         </div>

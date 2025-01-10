@@ -1,9 +1,9 @@
 import { Icon } from "@iconify/react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { RenderIf } from "@/components/hoc/RenderIf";
+// import { RenderIf } from "@/components/hoc/RenderIf";
 import { routerLinks } from "@/constants";
-import { Avatar } from "@/components/core/Avatar/Avatar";
-import { logoutUser } from "@/utils/fn";
+// import { Avatar } from "@/components/core/Avatar/Avatar";
+//import { logoutUser } from "@/utils/fn";
 
 interface Props {
   toggleMenu: () => void;
@@ -11,8 +11,6 @@ interface Props {
 }
 const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
   const navigate = useNavigate();
-  const token = null;
-  const profile: any = null;
 
   return (
     <div className="relative mt-0 ">

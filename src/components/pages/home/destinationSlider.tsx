@@ -66,7 +66,7 @@ export default function DestinationCarousel() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" id="services">
       {/* Header */}
       <p className="pb-6 lg:pb-12 text-black font-light">
         Our Services at a Glance

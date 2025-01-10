@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { routerLinks } from "@/constants";
-import { RenderIf } from "@/components/hoc/RenderIf";
+// import { RenderIf } from "@/components/hoc/RenderIf";
 import MobileNavigation from "./mobileNav";
-import MenuDropdown from "./menuDropdown";
-import { Avatar } from "@/components/core/Avatar/Avatar";
+// import MenuDropdown from "./menuDropdown";
+// import { Avatar } from "@/components/core/Avatar/Avatar";
 
 import { Icon } from "@iconify/react";
 
 const Menu = () => {
-  const token = null;
   const [openNav, setOpenNav] = useState(false);
-  const profile: any = null;
 
   const navigate = useNavigate();
 
@@ -22,19 +21,28 @@ const Menu = () => {
       </NavLink>
 
       <div className="hidden lg:flex gap-x-8 uppercase text-sm">
-        {routerLinks.map((link) => (
-          <NavLink
-            key={link.url}
-            className={({ isActive }) =>
-              `text-sm text-type  ${
-                isActive && link.link ? "font-bold" : "font-light"
-              }`
-            }
-            to={link.url}
-          >
-            {link.name}
-          </NavLink>
-        ))}
+        {routerLinks.map((link) => {
+          return link.link ? (
+            <NavLink
+              key={link.url}
+              className={({ isActive }) =>
+                `text-sm text-type ${isActive ? "font-bold" : "font-light"}`
+              }
+              to={link.url}
+            >
+              {link.name}
+            </NavLink>
+          ) : (
+            <Link
+              smooth
+              key={link.url}
+              className="text-sm text-type font-light"
+              to={link.url}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
       </div>
 
       <div className="flex items-center gap-x-3">
