@@ -8,7 +8,7 @@ import { Icon } from "@iconify/react";
 const Faq = () => {
   return (
     <div className="mt-[216px]">
-      <h1 className="text-secondary_1 text-4xl font-bold">
+      <h1 className="text-primary text-4xl font-bold">
         Frequently Asked <br /> Questions (FAQS)
       </h1>
 

@@ -13,6 +13,7 @@ import FlightsPage from "@/pages/flights";
 import FlightBooking from "@/pages/flights/flight-booking";
 import HotelBooking from "@/pages/accommodation/book-hotel";
 import VisaApplicationPage from "@/pages/visas/visa-application";
+import AboutUsPage from "@/pages/support/about-us";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       { path: "/flight-assistance", element: <FlightBooking /> },
       { path: "/hotel-booking", element: <HotelBooking /> },
       { path: "/visa-application", element: <VisaApplicationPage /> },
+      { path: "/about", element: <AboutUsPage /> },
     ],
   },
 ]);
