@@ -95,8 +95,7 @@ export default function useContactUsForm() {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log(formData);
-      // contactUsMutation(formData);
+      contactUsMutation(formData);
     }
   };
 

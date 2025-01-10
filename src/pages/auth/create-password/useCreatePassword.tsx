@@ -74,9 +74,7 @@ export default function useCreatePassword() {
         token: token ?? "",
       };
 
-      console.log(payload);
-
-      // reset(payload);
+      reset(payload);
     }
   };
 
