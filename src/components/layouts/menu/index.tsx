@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { routerLinks } from "@/constants";
-import { RenderIf } from "@/components/hoc/RenderIf";
+// import { RenderIf } from "@/components/hoc/RenderIf";
 import MobileNavigation from "./mobileNav";
-import MenuDropdown from "./menuDropdown";
-import { Avatar } from "@/components/core/Avatar/Avatar";
+// import MenuDropdown from "./menuDropdown";
+// import { Avatar } from "@/components/core/Avatar/Avatar";
 
 import { Icon } from "@iconify/react";
 
 const Menu = () => {
-  const token = null;
   const [openNav, setOpenNav] = useState(false);
-  const profile: any = null;
 
   const navigate = useNavigate();
 
@@ -22,17 +21,28 @@ const Menu = () => {
       </NavLink>
 
       <div className="hidden lg:flex gap-x-8 uppercase text-sm">
-        {routerLinks.map((link) => (
-          <NavLink
-            key={link.url}
-            className={({ isActive }) =>
-              `text-sm text-type  ${isActive ? "font-bold" : "font-light"}`
-            }
-            to={link.url}
-          >
-            {link.name}
-          </NavLink>
-        ))}
+        {routerLinks.map((link) => {
+          return link.link ? (
+            <NavLink
+              key={link.url}
+              className={({ isActive }) =>
+                `text-sm text-type ${isActive ? "font-bold" : "font-light"}`
+              }
+              to={link.url}
+            >
+              {link.name}
+            </NavLink>
+          ) : (
+            <Link
+              smooth
+              key={link.url}
+              className="text-sm text-type font-light"
+              to={link.url}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
       </div>
 
       <div className="flex items-center gap-x-3">
@@ -41,37 +51,20 @@ const Menu = () => {
           className="border-[0.5px] text-type h-5 w-5"
         />
 
-        <RenderIf condition={!token}>
-          <div className="hidden lg:flex items-center gap-x-[3px]">
-            <button
-              className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
-              onClick={() => navigate("/login")}
-            >
-              Log in
-            </button>
-            <button
-              className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
-              onClick={() => navigate("/register")}
-            >
-              Sign up
-            </button>
-          </div>
-        </RenderIf>
-
-        <RenderIf condition={!!token && !!profile}>
-          <div className="hidden lg:flex items-center gap-x-3">
-            <Avatar
-              image={`${profile?.first_name} ${profile?.last_name}`}
-              size="40"
-            />
-            <div className="text-type text-[12px]">
-              <h1 className="capitalize font-semibold">{`${profile?.first_name} ${profile?.last_name}`}</h1>
-              <p>{profile?.email ?? ""}</p>
-            </div>
-
-            <MenuDropdown />
-          </div>
-        </RenderIf>
+        <div className="hidden lg:flex items-center gap-x-2">
+          <button
+            className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
+            onClick={() => navigate("#contact")}
+          >
+            Contact Us
+          </button>
+          <button
+            className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
+            onClick={() => navigate("/register")}
+          >
+            Book a trip
+          </button>
+        </div>
 
         <button className="block lg:hidden" onClick={() => setOpenNav(true)}>
           <Icon

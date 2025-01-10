@@ -38,7 +38,7 @@ export default function Newsletter() {
       className="min-h-[70vh] p-4 flex items-center justify-center"
       ref={containerRef}
     >
-      <div className=" w-full bg-[#DFE5F140] min-h-[500px] rounded-[24px] flex items-center justify-center">
+      <div className=" w-full bg-[#FAFBF5] min-h-[500px] rounded-[24px] flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function Newsletter() {
             initial={{ opacity: 0, y: 20 }}
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="text-3xl text-secondary_1 md:text-5xl font-bold text-center mb-4"
+            className="text-3xl text-primary md:text-5xl font-bold text-center mb-4"
           >
             Stay Inspired
           </motion.h1>

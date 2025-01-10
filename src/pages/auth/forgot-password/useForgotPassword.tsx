@@ -71,7 +71,7 @@ export default function useForgotPassword() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      //mutate(formData);
+      mutate(formData);
     }
   };
 

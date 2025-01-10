@@ -1,9 +1,9 @@
 import { Icon } from "@iconify/react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { RenderIf } from "@/components/hoc/RenderIf";
+// import { RenderIf } from "@/components/hoc/RenderIf";
 import { routerLinks } from "@/constants";
-import { Avatar } from "@/components/core/Avatar/Avatar";
-import { logoutUser } from "@/utils/fn";
+// import { Avatar } from "@/components/core/Avatar/Avatar";
+//import { logoutUser } from "@/utils/fn";
 
 interface Props {
   toggleMenu: () => void;
@@ -11,8 +11,6 @@ interface Props {
 }
 const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
   const navigate = useNavigate();
-  const token = null;
-  const profile: any = null;
 
   return (
     <div className="relative mt-0 ">
@@ -37,7 +35,9 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
                 key={link.url}
                 className={({ isActive }) =>
                   `text-sm text-text2/80 px-3  ${
-                    isActive ? " bg-[#F1F1F1] rounded-full py-3 " : ""
+                    isActive && link.link
+                      ? " bg-[#F1F1F1] rounded-full py-3 "
+                      : ""
                   }`
                 }
                 to={link.url}
@@ -47,24 +47,39 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
             ))}
           </div>
 
-          <RenderIf condition={!token}>
+          <div className="flex gap-y-2 flex-col pt-3">
+            <button
+              className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4 cursor-pointer border-[0.5px] border-secondary "
+              onClick={() => navigate("#contact")}
+            >
+              Contact Us
+            </button>
+            <button
+              className="py-2 px-4 rounded-full bg-primary text-white cursor-pointer"
+              onClick={() => navigate("/register")}
+            >
+              Book a Trip
+            </button>
+          </div>
+
+          {/* <RenderIf condition={!token}>
             <div className="flex gap-y-2 flex-col pt-3">
               <button
                 className="bg-[#E0EBF5] text-secondary rounded-full py-2 px-4 cursor-pointer border-[0.5px] border-secondary "
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("#contact")}
               >
-                Log in
+                Contact Us
               </button>
               <button
                 className="py-2 px-4 rounded-full bg-primary text-white cursor-pointer"
                 onClick={() => navigate("/register")}
               >
-                Sign up
+                Book a Trip
               </button>
             </div>
-          </RenderIf>
+          </RenderIf> */}
 
-          <RenderIf condition={!!token && !!profile}>
+          {/* <RenderIf condition={!!token && !!profile}>
             <div className="pt-3">
               <div className="px-3 flex items-center gap-x-3">
                 <Avatar
@@ -97,7 +112,7 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
                 </button>
               </div>
             </div>
-          </RenderIf>
+          </RenderIf> */}
         </div>
       </div>
     </div>

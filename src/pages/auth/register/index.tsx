@@ -2,7 +2,6 @@ import AuthForm from "@/components/pages/auth/authForm";
 import { InputComponent } from "@/components/core/input";
 import { Checkbox } from "@/components/core/Checkbox/Checkbox";
 import CustomButton from "@/components/core/button";
-import { Link } from "react-router-dom";
 import useRegister from "./useRegister";
 import { Icon } from "@iconify/react";
 import Dropdown from "@/components/core/Dropdown";
@@ -122,7 +121,7 @@ const RegistrationPage = () => {
               className="w-[400px] rounded-full h-[50px]"
               theme="primary"
               type="submit"
-              // isLoading={isLoading}
+              loading={isLoading}
               // disabled={!isFormValid}
             >
               Create Account

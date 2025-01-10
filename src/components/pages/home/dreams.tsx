@@ -35,9 +35,9 @@ const Dreams = () => {
         >
           <div className="relative order-1 lg:order-2">
             <div className=" rounded-[32px] overflow-hidden h-full p-4">
-              <div className="aspect-[6/8] relative">
+              <div className="aspect-[4/4] relative">
                 <img
-                  src="./assets/images/home/dreams.webp"
+                  src="./assets/images/home/tourist.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover rounded-[24px]"
                 />
@@ -45,16 +45,16 @@ const Dreams = () => {
             </div>
           </div>
 
-          <div className="space-y-6 md:pl-8 order-2 lg:order-1">
-            <h1 className="text-[32px] leading-[38.3px] text-secondary_1 md:text-[48px] md:leading-[57.6px] font-bold tracking-tight">
+          <div className="space-y-[48px] md:pl-8 order-2 lg:order-1">
+            <h1 className="text-[32px] leading-[38.3px] text-primary md:text-[48px] md:leading-[57.6px] font-bold tracking-tight">
               Ready to Make Your Travel Dreams a Reality?
             </h1>
 
             <CustomButton
-              className="bg-[#9BB068] hover:bg-[#9BB068]/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-lg font-medium"
+              className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-lg font-medium"
               onClick={() => navigate("/visa")}
             >
-              Contact Us Now!
+              Contact Us Now
             </CustomButton>
           </div>
         </div>

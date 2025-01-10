@@ -26,45 +26,88 @@ const ServiceOptions = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-[150px]">
+    <div className="flex flex-col gap-y-[20px]">
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div>
+            <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+              CAR RENTALS
+            </h1>
+            <div className="space-y-6 mb-[48px]">
+              <h1 className="text-2xl text-primary md:text-4xl font-bold tracking-tight">
+                Affordable & <br /> Convenient Ride for Every Journey
+              </h1>
+
+              <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                Stress-free travel starts here. Skip the paperwork headaches and
+                let us handle your visa processing. Ready to explore the world?
+                Start now!
+              </p>
+            </div>
+            <CustomButton
+              className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
+              onClick={() => navigate("/visa")}
+            >
+              Book a Ride
+            </CustomButton>
+          </div>
+          <div className="relative">
+            <div className=" bg-[#E1E1E1] rounded-[32px] overflow-hidden h-full p-4">
+              <div className=" aspect-[6/7] relative">
+                <img
+                  src="/assets/images/home-car.webp"
+                  alt="Visa assistance demonstration"
+                  className="w-full h-full object-contain rounded-[24px] absolute"
+                  style={{ transform: "rotate(360deg)" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center p-8">
+        <div
+          ref={contentRef}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="relative">
-            <div className=" rounded-[32px] overflow-hidden h-full p-4">
+            <div className="overflow-hidden h-full p-4">
               <div className="aspect-[6/8] relative">
                 <img
-                  src="./assets/images/home/travel-ready.webp"
+                  src="/assets/images/home/young couple.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-full h-full object-cover absolute rounded-[32px]"
+                  style={{ transform: "rotate(360deg)" }}
                 />
               </div>
             </div>
           </div>
 
-          <div className="space-y-6 md:pl-8">
-            <h1 className="text-2xl text-secondary_1 md:text-4xl font-bold tracking-tight">
-              <div className=" inline-block mb-3">
-                <span className="italic">Travel Ready?</span>
-              </div>
-
-              <h1 className="text-lg md:text-3xl">
-                Let Us Handle <br /> your visa
-              </h1>
+          <div>
+            <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+              VACATION PACKAGES
             </h1>
+            <div className="space-y-6 mb-[48px]">
+              <h1 className="text-2xl text-primary md:text-4xl font-bold tracking-tight">
+                Curated trips for families, <br /> honeymooners, & adventurers.
+              </h1>
 
-            <p className="text-gray-700 text-base md:text-lg max-w-xl">
-              Stress-free travel starts here. Skip the paperwork headaches and
-              let us handle your visa processing. Ready to explore the world?
-              Start now!
-            </p>
-
+              <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                Stress-free travel starts here. Skip the paperwork headaches and
+                let us handle your visa processing. Ready to explore the world?
+                Start now!
+              </p>
+            </div>
             <CustomButton
-              className="bg-[#9BB068] hover:bg-[#9BB068]/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-lg font-medium"
+              className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
               onClick={() => navigate("/visa")}
             >
               Get Started
@@ -76,39 +119,85 @@ const ServiceOptions = () => {
       <div className="flex items-center justify-center p-8">
         <div
           ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="relative order-1 lg:order-2">
-            <div className=" rounded-[32px] overflow-hidden h-full p-4">
-              <div className="aspect-[6/8] relative">
+          <div>
+            <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+              CUSTOMIZED TOURS
+            </h1>
+            <div className="space-y-6 mb-[48px]">
+              <h1 className="text-2xl text-primary md:text-4xl font-bold tracking-tight">
+                Tailored experiences to match your preferences.
+              </h1>
+
+              <p className="text-black text-sm md:text-base max-w-xl">
+                Stress-free travel starts here. Skip the paperwork headaches and
+                let us handle your visa processing. Ready to explore the world?
+                Start now!
+              </p>
+            </div>
+            <CustomButton
+              className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
+              onClick={() => navigate("/visa")}
+            >
+              Get Started
+            </CustomButton>
+          </div>
+
+          <div className="relative">
+            <div className="overflow-hidden h-full p-4">
+              <div className="h-full aspect-[5/6] relative">
                 <img
-                  src="./assets/images/home/drive.webp"
+                  src="/assets/images/home/adventure king.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-full h-full object-cover absolute rounded-[32px]"
+                  style={{ transform: "rotate(360deg)" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center p-8">
+        <div
+          ref={contentRef}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="relative">
+            <div className="rounded-[32px] overflow-hidden h-full p-4">
+              <div className="h-full aspect-[6/7] relative">
+                <img
+                  src="/assets/images/home/visa-hold.webp"
+                  alt="Visa assistance demonstration"
+                  className="w-full h-full object-cover rounded-[24px] absolute"
+                  style={{ transform: "rotate(360deg)" }}
                 />
               </div>
             </div>
           </div>
 
-          <div className="space-y-6 md:pl-8 order-2 lg:order-1">
-            <h1 className="text-2xl text-secondary_1 md:text-4xl font-bold tracking-tight">
-              <div className=" inline-block mb-3">
-                <span className="italic">Drive Into Adventure,</span>
-              </div>
-
-              <h1 className="text-lg md:text-3xl">Choose Your Ride</h1>
+          <div>
+            <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+              TRAVEL INSURANCE
             </h1>
+            <div className="space-y-6 mb-[48px]">
+              <h1 className="text-2xl text-primary md:text-4xl font-bold tracking-tight">
+                Secure your trips with competitively priced packages.
+              </h1>
 
-            <p className="text-gray-700 text-base md:text-lg max-w-xl">
-              Your ride, your way. Choose from a range of vehicles tailored to
-              your journey. Hit the road with confidence—explore our car rental
-              options!
-            </p>
-
+              <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                Stress-free travel starts here. Skip the paperwork headaches and
+                let us handle your visa processing. Ready to explore the world?
+                Start now!
+              </p>
+            </div>
             <CustomButton
-              className="bg-[#9BB068] hover:bg-[#9BB068]/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-lg font-medium"
+              className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
               onClick={() => navigate("/visa")}
             >
               Get Started

@@ -73,8 +73,7 @@ export default function useLogin() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // mutate(formData);
+      mutate(formData);
     }
   };
 

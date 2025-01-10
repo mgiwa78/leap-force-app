@@ -9,7 +9,7 @@ const ContactUsForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmitForm}>
-        <div className="grid grid-cols-1 gap-x-3 gap-y-9 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-3 gap-y-[59px] lg:grid-cols-2">
           <InputComponent
             label="Name"
             id="name"
@@ -66,11 +66,11 @@ const ContactUsForm = () => {
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-[59px]">
           <CustomButton
             loading={isLoading}
             className="w-full"
-            theme="primary"
+            theme="secondary"
             size="44"
             type="submit"
           >

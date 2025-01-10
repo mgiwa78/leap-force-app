@@ -1,18 +1,16 @@
 import { Icon } from "@iconify/react";
 import ContactUsForm from "@/components/pages/support/contact-us/contact-form";
-import Faq from "@/components/pages/support/contact-us/faq";
+// import Faq from "@/components/pages/support/contact-us/faq";
 
 const ContactUsPage = () => {
   return (
-    <main className="max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
-        <div>
-          <div className="mb-[65px]">
-            <h2 className="text-xl font-medium text-secondary">Contact Us</h2>
-            <h1 className="text-4xl font-bold text-text2 mt-3">
-              How Can we
-              <br />
-              Assist You
+    <main className="">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
+        <div className="col-span-1">
+          <div className="pb-[65px] text-primary">
+            <h2 className="text-xl font-medium">Contact Us</h2>
+            <h1 className="text-4xl font-bold  mt-3">
+              Let’s Make Your Travel Dreams a Reality
             </h1>
           </div>
 
@@ -61,10 +59,12 @@ const ContactUsPage = () => {
           </div>
         </div>
 
-        <ContactUsForm />
+        <div className="col-span-1 md:col-span-2">
+          <ContactUsForm />
+        </div>
       </div>
 
-      <Faq />
+      {/* <Faq /> */}
     </main>
   );
 };

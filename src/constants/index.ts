@@ -1,9 +1,8 @@
 export const routerLinks = [
-  { name: "Home", url: "/" },
-  { name: "Flight", url: "/flight" },
-  { name: "Accommodation", url: "/accommodation" },
-  { name: "Visa", url: "/visa" },
-  { name: "Car Hire", url: "/car-hire" },
+  { name: "Home", url: "/", link: true },
+  { name: "About Us", url: "/about", link: true },
+  { name: "Our Services", url: "#services", link: false },
+  { name: "Contact Us", url: "#contact", link: false },
 ];
 
 export const companyDetails = [
@@ -25,23 +24,23 @@ export const companyDetails = [
 
 export const socialLinks = [
   {
-    icon: "ph:phone-call",
+    icon: "cib:linkedin",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:facebook",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:instagram",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:twitter",
     url: "",
   },
   {
-    icon: "ph:phone-call",
+    icon: "cib:youtube",
     url: "",
   },
 ];

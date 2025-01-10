@@ -8,9 +8,11 @@ interface IAppLayout {
 
 const AppLayout = ({ children }: IAppLayout) => {
   return (
-    <main className="flex flex-col min-h-screen max-w-[1550px] mx-auto py-2 px-3 lg:px-3 lg:pt-4 lg:mb-[100px]">
-      <Menu />
-      <div className="mt-4 flex-grow">{children}</div>
+    <main>
+      <div className="flex flex-col min-h-screen max-w-[1550px] mx-auto py-2 px-3 lg:px-3 lg:pt-4 lg:mb-[100px]">
+        <Menu />
+        <div className="mt-4 flex-grow">{children}</div>
+      </div>
       <Footer />
     </main>
   );

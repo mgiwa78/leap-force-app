@@ -5,34 +5,51 @@ import ServiceOptions from "@/components/pages/home/service-options";
 import Newsletter from "@/components/pages/home/newsletter";
 import Dreams from "@/components/pages/home/dreams";
 import Testimonials from "@/components/pages/home/testimonials";
+import ContactUsPage from "../support/contact-us";
+import ChooseLeapforce from "@/components/pages/home/why-choose";
 
 const Home = () => {
   return (
     <main>
-      <div className="min-h-[550px] w-full mx-auto bg-secondary_1 rounded-[32px] px-8 relative overflow-hidden py-7">
+      <div
+        style={{
+          background: `linear-gradient(147.16deg, #9CA73A 25.24%, #1D81D5 104.7%)`,
+          boxShadow: `0px 10px 10px -5px #1D81D4`,
+        }}
+        className="min-h-[550px] w-full mx-auto  rounded-[32px] px-8 lg:px-[60px] relative overflow-hidden py-7"
+      >
         <div className="flex flex-col md:flex-row items-center justify-center h-full">
           <div className="flex w-full md:w-1/2 items-center">
             <div className="space-y-[27px]">
-              <h1 className=" text-white text-4xl md:text-[60px] md:leading-[70px] font-bold">
-                Travel with <br /> <span>Confidence.</span> <br />
+              <h1 className=" text-white text-4xl md:text-[48px] md:leading-[58px] font-bold">
+                Plan Your Journey with Ease -
+                <span className="font-normal"> Your Adventure Awaits!</span>
               </h1>
-              <p className="text-white lg:w-3/4">
-                Book flights, find accommodations, rent cars, and handle
-                visas—all in one place. Leapforce Travels simplifies every step
-                of your adventure.
-              </p>
-              <CustomButton className="bg-primary border-none text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
-                Plan your next trip!
+              <h1 className="text-white lg:w-3/4">
+                From flights to hotels and everything in between, Leapforce
+                Travels makes it simple to explore the world. Enter your details
+                below to find the best travel deals in seconds.
+              </h1>
+
+              <CustomButton className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
+                Plan your trip today
               </CustomButton>
             </div>
           </div>
 
-          <div className="h-full w-full md:w-1/2  ">
+          <div className="h-full w-full md:w-1/2 relative">
             <img
               src="/assets/images/home-flights.png"
               alt="home visa"
-              className="max-h-[90%] md:h-[95%] w-full object-contain transform rotate-[32.81deg]"
+              className="max-h-[90%] md:h-[95%] w-full object-contain transform rotate-[40.81deg] relative"
             />
+            <div className="absolute top-[22%] lg:top-[36%] rotate-[40.81deg] mix-blend-screen">
+              <img
+                src="/assets/images/home/flight-gas.png"
+                alt="home visa"
+                className=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -55,6 +72,16 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="max-w-5xl mx-auto py-[100px]">
+        <ChooseLeapforce />
+      </div>
+
+      <div className="">
+        <div className="max-w-5xl mx-auto py-[100px]">
+          <Testimonials />
+        </div>
+      </div>
+
       <div className="max-w-5xl mx-auto">
         <Newsletter />
       </div>
@@ -65,9 +92,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
+      <div id="contact">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <Testimonials />
+          <ContactUsPage />
         </div>
       </div>
     </main>
