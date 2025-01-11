@@ -51,7 +51,7 @@ const ServiceOptions = () => {
             </div>
             <CustomButton
               className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
-              onClick={() => navigate("/visa")}
+              onClick={() => navigate("/service-offering")}
             >
               Book a Ride
             </CustomButton>
@@ -108,7 +108,7 @@ const ServiceOptions = () => {
             </div>
             <CustomButton
               className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
-              onClick={() => navigate("/visa")}
+              onClick={() => navigate("/service-offering")}
             >
               Get Started
             </CustomButton>
@@ -140,7 +140,7 @@ const ServiceOptions = () => {
             </div>
             <CustomButton
               className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
-              onClick={() => navigate("/visa")}
+              onClick={() => navigate("/service-offering")}
             >
               Get Started
             </CustomButton>
@@ -198,7 +198,7 @@ const ServiceOptions = () => {
             </div>
             <CustomButton
               className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
-              onClick={() => navigate("/visa")}
+              onClick={() => navigate("/service-offering")}
             >
               Get Started
             </CustomButton>

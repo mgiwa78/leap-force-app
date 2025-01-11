@@ -56,7 +56,7 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
             </button>
             <button
               className="py-2 px-4 rounded-full bg-primary text-white cursor-pointer"
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/service-offering")}
             >
               Book a Trip
             </button>

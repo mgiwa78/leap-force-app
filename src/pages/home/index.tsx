@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import CustomButton from "@/components/core/button";
 import HomeAccomodation from "@/components/pages/accommodation/accommodation";
 import DestinationCarousel from "@/components/pages/home/destinationSlider";
@@ -9,6 +10,7 @@ import ContactUsPage from "../support/contact-us";
 import ChooseLeapforce from "@/components/pages/home/why-choose";
 
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <main>
       <div
@@ -31,7 +33,7 @@ const Home = () => {
                 below to find the best travel deals in seconds.
               </h1>
 
-              <CustomButton className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
+              <CustomButton onClick={() => navigate("/service-offering")} className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
                 Plan your trip today
               </CustomButton>
             </div>

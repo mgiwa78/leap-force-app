@@ -3,15 +3,16 @@ import { useNavigate } from "react-router-dom";
 import ChooseLeapforce from "@/components/pages/home/why-choose";
 import Faq from "@/components/pages/support/contact-us/faq";
 import OurTeam from "@/components/pages/support/contact-us/team";
+import "./index.css";
 
 const AboutUsPage = () => {
   const navigate = useNavigate();
   return (
     <main>
-      <div className="h-[600px] w-full mx-auto bg-[#E6E9CD] rounded-[32px] px-8 relative overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
-          <div className="flex items-center">
-            <div className="space-y-[27px]">
+      <div className="min-h-[600px] w-full mx-auto bg-[#E6E9CD] rounded-3xl px-8 relative overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center">
+          <div className="flex justify-center">
+            <div className="space-y-6 text-center lg:text-left">
               <h1 className="capitalize text-[#9CA73A] text-2xl lg:text-5xl font-bold">
                 At Leapforce Travels, <br /> we turn journeys into unforgettable
                 experiences.
@@ -19,18 +20,18 @@ const AboutUsPage = () => {
 
               <CustomButton
                 onClick={() => navigate("/visa-application")}
-                className="bg-secondary text-white rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
+                className="bg-secondary text-white rounded-full font-medium text-xs lg:text-base px-3 py-2 lg:py-3 lg:px-6"
               >
                 Learn more
               </CustomButton>
             </div>
           </div>
 
-          <div className="h-full flex items-end justify-center lg:absolute lg:right-0 lg:bottom-0">
+          <div className="flex image-container justify-center items-center h-full">
             <img
-              src="/assets/images/home-visa.webp"
+              src="/assets/images/home/board.webp"
               alt="home visa"
-              className="max-h-[90%] lg:h-[95%] w-auto object-contain"
+              className="h-4/5 lg:h-3/5 w-auto object-contain"
             />
           </div>
         </div>
