@@ -101,6 +101,7 @@ export default function useContactUsForm() {
 
   return {
     formData,
+    setFormData,
     errors,
     handleInputChange,
     handleSubmitForm,
