@@ -1,0 +1,16 @@
+.image-container {
+  /* Match the background color */
+}
+
+.image-container img {
+  clip-path: polygon(
+    0 0,
+    70% 0,
+    70% 40%,
+    100% 40%,
+    100% 100%,
+    30% 100%,
+    30% 60%,
+    0 60%
+  );
+}

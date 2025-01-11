@@ -7,14 +7,6 @@ export default function HomeAccomodation() {
   const location = useLocation();
   const isRouteMatch = location.pathname === "/accommodation";
 
-  const handleRouting = () => {
-    if (isRouteMatch) {
-      navigate("/accommodation/hotel-booking");
-    } else {
-      navigate("/accommodation");
-    }
-  };
-
   return (
     <div className="bg-[#FAFAFA] p-12 rounded-lg mb-[100px]">
       <div className="">
@@ -37,7 +29,7 @@ export default function HomeAccomodation() {
                 </p>
                 <CustomButton
                   className="hidden md:inline-flex bg-secondary_1 shadow transition-colors hover:bg-primary/90 text-white text-sm lg:text-base rounded-full px-4 py-2 lg:px-[24px] lg:py-[12px]"
-                  onClick={() => handleRouting()}
+                  onClick={() => navigate("/service-offering")}
                 >
                   Book an hotel
                 </CustomButton>

@@ -79,7 +79,7 @@ const contactUs = async (payload: {
   subject: string;
 }) => {
   const response = await apiClient.post<GenericApiResponse>(
-    "/users/contact-us",
+    "/users/lp-contact-us",
     payload
   );
   return response;

@@ -4,8 +4,14 @@ import { Textarea } from "@headlessui/react";
 import useContactUsForm from "./useContactForm";
 
 const ContactUsForm = () => {
-  const { formData, errors, handleInputChange, handleSubmitForm, isLoading } =
-    useContactUsForm();
+  const {
+    formData,
+    errors,
+    handleInputChange,
+    handleSubmitForm,
+    isLoading,
+    setFormData,
+  } = useContactUsForm();
   return (
     <div>
       <form onSubmit={handleSubmitForm}>
@@ -59,6 +65,13 @@ const ContactUsForm = () => {
                focus:border-secondary_1"
               placeholder="Enter your message"
               rows={6}
+              value={formData?.message}
+              onChange={(e: any) => {
+                setFormData({
+                  ...formData,
+                  message: e.target.value,
+                });
+              }}
             />
             {errors?.message && (
               <span className="text-error text-xs ">{errors?.message}</span>

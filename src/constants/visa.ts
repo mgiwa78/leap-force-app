@@ -37,3 +37,19 @@ export const shengenCountries = [
   { value: "Spain", label: "Spain" },
   { value: "Sweden", label: "Sweden" },
 ];
+
+export const serviceOfferingOptions = [
+  { value: "flight booking", label: "Flight Booking" },
+  { value: "hotel reservation", label: "Hotel Reservation" },
+  { value: "flights_hotel", label: "Flight & Hotel" },
+  { value: "transfers", label: "Transfers" },
+  { value: "car_rental", label: "Car Rental" },
+  { value: "cruises", label: "Cruises" },
+  { value: "activities", label: "Activities" },
+  { value: "customized_tours", label: "Customized Tours" },
+  { value: "vacation_packages", label: "Vacation Packages" },
+  { value: "travel_insurance", label: "Travel Insurance" },
+  { value: "travel_guides", label: "Travel Guides" },
+  { value: "travel_documentation", label: "Travel Documentation" },
+  { value: "corporate_travel", label: "Corporate Travel" },
+];

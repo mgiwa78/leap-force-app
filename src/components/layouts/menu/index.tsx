@@ -60,7 +60,7 @@ const Menu = () => {
           </button>
           <button
             className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
-            onClick={() => navigate("/register")}
+            onClick={() => navigate("/service-offering")}
           >
             Book a trip
           </button>
