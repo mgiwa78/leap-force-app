@@ -10,7 +10,7 @@ import ContactUsPage from "../support/contact-us";
 import ChooseLeapforce from "@/components/pages/home/why-choose";
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <main>
       <div
@@ -18,7 +18,7 @@ const Home = () => {
           background: `linear-gradient(147.16deg, #9CA73A 25.24%, #1D81D5 104.7%)`,
           boxShadow: `0px 10px 10px -5px #1D81D4`,
         }}
-        className="min-h-[550px] w-full mx-auto  rounded-[32px] px-8 lg:px-[60px] relative overflow-hidden py-7"
+        className="min-h-[550px] w-full mx-auto  rounded-[32px] px-8 lg:px-[60px]  overflow-hidden py-7"
       >
         <div className="flex flex-col md:flex-row items-center justify-center h-full">
           <div className="flex w-full md:w-1/2 items-center">
@@ -33,7 +33,10 @@ const Home = () => {
                 below to find the best travel deals in seconds.
               </h1>
 
-              <CustomButton onClick={() => navigate("/service-offering")} className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6">
+              <CustomButton
+                onClick={() => navigate("/service-offering")}
+                className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
+              >
                 Plan your trip today
               </CustomButton>
             </div>

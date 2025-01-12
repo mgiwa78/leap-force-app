@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 // import { RenderIf } from "@/components/hoc/RenderIf";
 import { routerLinks } from "@/constants";
 // import { Avatar } from "@/components/core/Avatar/Avatar";
@@ -11,6 +12,9 @@ interface Props {
 }
 const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const isHomeRoute = location.pathname === "/";
 
   return (
     <div className="relative mt-0 ">
@@ -30,21 +34,32 @@ const MobileNavigation = ({ isOpen, toggleMenu }: Props) => {
           </div>
 
           <div className="mt-8 flex flex-col gap-y-6 text-xs pb-3 border-b-[0.25px] border-[#C8C8C8]">
-            {routerLinks?.map((link) => (
-              <NavLink
-                key={link.url}
-                className={({ isActive }) =>
-                  `text-sm text-text2/80 px-3  ${
-                    isActive && link.link
-                      ? " bg-[#F1F1F1] rounded-full py-3 "
-                      : ""
-                  }`
-                }
-                to={link.url}
-              >
-                {link.name}
-              </NavLink>
-            ))}
+            {routerLinks?.map((link) => {
+              return link.link ? (
+                <NavLink
+                  key={link.url}
+                  className={({ isActive }) =>
+                    `text-sm text-text2/80 px-3  ${
+                      isActive
+                        ? " bg-[#F1F1F1] rounded-full py-3 "
+                        : ""
+                    }`
+                  }
+                  to={link.url}
+                >
+                  {link.name}
+                </NavLink>
+              ) : (
+                <Link
+                  smooth
+                  key={link.url}
+                  className="text-sm text-type font-light"
+                  to={isHomeRoute ? link.url : `/${link?.url}`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="flex gap-y-2 flex-col pt-3">
