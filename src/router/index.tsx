@@ -16,14 +16,17 @@ import Home from "@/pages/home";
 import AboutUsPage from "@/pages/support/about-us";
 import ServiceOffering from "@/pages/services";
 import NotFound from "@/pages/not-found";
+import ErrorBoundary from "@/pages/error-boundary";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <AppLayout>
-        <Outlet />
-      </AppLayout>
+      <ErrorBoundary>
+        <AppLayout>
+          <Outlet />
+        </AppLayout>
+      </ErrorBoundary>
     ),
     children: [
       { path: "", element: <Home /> },
