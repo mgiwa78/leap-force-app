@@ -15,6 +15,7 @@ import Home from "@/pages/home";
 // import VisaApplicationPage from "@/pages/visas/visa-application";
 import AboutUsPage from "@/pages/support/about-us";
 import ServiceOffering from "@/pages/services";
+import NotFound from "@/pages/not-found";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       // { path: "/hotel-booking", element: <HotelBooking /> },
       // { path: "/visa-application", element: <VisaApplicationPage /> },
       { path: "/about", element: <AboutUsPage /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);
