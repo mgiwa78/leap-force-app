@@ -1,7 +1,7 @@
 export const routerLinks = [
   { name: "Home", url: "/", link: true },
   { name: "About Us", url: "/about", link: true },
-  { name: "Our Services", url: "#services", link: false },
+  { name: "Our Services", url: "/services", link: true },
   { name: "Contact Us", url: "#contact", link: false },
 ];
 

@@ -17,6 +17,7 @@ import AboutUsPage from "@/pages/support/about-us";
 import ServiceOffering from "@/pages/services";
 import NotFound from "@/pages/not-found";
 import ErrorBoundary from "@/pages/error-boundary";
+import OurServices from "@/pages/our-services";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,7 @@ const router = createBrowserRouter([
       // { path: "/hotel-booking", element: <HotelBooking /> },
       // { path: "/visa-application", element: <VisaApplicationPage /> },
       { path: "/about", element: <AboutUsPage /> },
+      { path: "/services", element: <OurServices /> },
       { path: "*", element: <NotFound /> },
     ],
   },
