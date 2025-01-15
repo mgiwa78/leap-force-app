@@ -26,13 +26,15 @@ const ServiceOptions = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-[20px]">
+    <div
+      ref={contentRef}
+      className={`flex flex-col gap-y-[20px] ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="flex items-center justify-center p-8">
         <div
-          ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
         >
           <div>
             <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
@@ -73,10 +75,7 @@ const ServiceOptions = () => {
 
       <div className="flex items-center justify-center p-8">
         <div
-          ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
         >
           <div className="relative">
             <div className="overflow-hidden h-full p-4">
@@ -118,10 +117,7 @@ const ServiceOptions = () => {
 
       <div className="flex items-center justify-center p-8">
         <div
-          ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
         >
           <div>
             <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
@@ -150,7 +146,7 @@ const ServiceOptions = () => {
             <div className="overflow-hidden h-full p-4">
               <div className="h-full aspect-[5/6] relative">
                 <img
-                  src="/assets/images/home/adventure king.webp"
+                  src="/assets/images/home/tourism group.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}
@@ -163,16 +159,13 @@ const ServiceOptions = () => {
 
       <div className="flex items-center justify-center p-8">
         <div
-          ref={contentRef}
-          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
         >
           <div className="relative">
             <div className="rounded-[32px] overflow-hidden h-full p-4">
               <div className="h-full aspect-[6/7] relative">
                 <img
-                  src="/assets/images/home/visa-hold.webp"
+                  src="/assets/images/home/travelling group.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover rounded-[24px] absolute"
                   style={{ transform: "rotate(360deg)" }}
