@@ -1,4 +1,6 @@
+import { useRef, ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 import CustomButton from "@/components/core/button";
 import HomeAccomodation from "@/components/pages/accommodation/accommodation";
 import DestinationCarousel from "@/components/pages/home/destinationSlider";
@@ -9,11 +11,57 @@ import Testimonials from "@/components/pages/home/testimonials";
 import ContactUsPage from "../support/contact-us";
 import ChooseLeapforce from "@/components/pages/home/why-choose";
 
+const verticalVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+const horizontalVariants = {
+  hidden: { opacity: 0, x: 100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+const AnimatedSection = ({
+  children,
+  animation = verticalVariants,
+}: {
+  children: ReactNode;
+  animation?: any;
+}) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
+  return (
+    <motion.div
+      ref={ref}
+      variants={animation}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 const Home = () => {
   const navigate = useNavigate();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
     <main>
-      <div
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         style={{
           background: `linear-gradient(147.16deg, #9CA73A 25.24%, #1D81D5 104.7%)`,
           boxShadow: `0px 10px 10px -5px #1D81D4`,
@@ -57,49 +105,65 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="bg-white min-h-[700px]">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <DestinationCarousel />
+          <AnimatedSection>
+            <DestinationCarousel />
+          </AnimatedSection>
         </div>
       </div>
 
       <div className="bg-[#FAFAFA]  ">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <HomeAccomodation />
+          <AnimatedSection animation={horizontalVariants}>
+            <HomeAccomodation />
+          </AnimatedSection>
         </div>
       </div>
 
       <div className="bg-white">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <ServiceOptions />
+          <AnimatedSection animation={horizontalVariants}>
+            <ServiceOptions />
+          </AnimatedSection>
         </div>
       </div>
 
       <div className="max-w-5xl mx-auto py-[100px]">
-        <ChooseLeapforce />
+        <AnimatedSection animation={horizontalVariants}>
+          <ChooseLeapforce />
+        </AnimatedSection>
       </div>
 
       <div className="">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <Testimonials />
+          <AnimatedSection>
+            <Testimonials />
+          </AnimatedSection>
         </div>
       </div>
 
       <div className="max-w-5xl mx-auto">
-        <Newsletter />
+        <AnimatedSection>
+          <Newsletter />
+        </AnimatedSection>
       </div>
 
       <div className="">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <Dreams />
+          <AnimatedSection>
+            <Dreams />
+          </AnimatedSection>
         </div>
       </div>
 
       <div id="contact">
         <div className="max-w-5xl mx-auto py-[100px]">
-          <ContactUsPage />
+          <AnimatedSection animation={horizontalVariants}>
+            <ContactUsPage />
+          </AnimatedSection>
         </div>
       </div>
     </main>

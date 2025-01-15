@@ -8,16 +8,16 @@ export const routerLinks = [
 export const companyDetails = [
   {
     icon: "mingcute:location-line",
-    text: "Lorem ipsum dolor sit amet consectetur. ",
+    text: " 89 Allen Avenue Ikeja Lagos, Nigeria ",
   },
   {
     icon: "ph:envelope",
-    text: "info@315travelsand tours.com",
+    text: "info@leapforcetravels.com",
     type: "link",
   },
   {
     icon: "ph:phone-call",
-    text: "+234 801 234 5678",
+    text: "+234 908 372 6264",
     type: "phone",
   },
 ];

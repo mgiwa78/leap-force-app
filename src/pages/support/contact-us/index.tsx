@@ -19,7 +19,13 @@ const ContactUsPage = () => {
               <Icon icon="ic:baseline-whatsapp" width="24" height="24" />
               <div>
                 <h3 className="font-bold">WhatsApp</h3>
-                <a href="tel:+2347025650047">+2347025650047</a>
+                <a
+                  href="https://wa.me/2349083726264"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +2349083726264
+                </a>
               </div>
             </div>
 
@@ -27,7 +33,7 @@ const ContactUsPage = () => {
               <Icon icon="ph:phone-call" width="24" height="24" />
               <div>
                 <h3 className="font-bold">Call/SMS</h3>
-                <a href="tel:+2347025650047">+2347025650047</a>
+                <a href="tel:+2349083726264">+2349083726264</a>
               </div>
             </div>
 
@@ -39,9 +45,9 @@ const ContactUsPage = () => {
               />
               <div>
                 <h3 className="font-bold">E-mail Address</h3>
-                <a href="mailto:info@315serviceslimited.com">
+                <a href="mailto:info@leapforcetravels.com">
                   {" "}
-                  info@315serviceslimited.com
+                  info@leapforcetravels.com
                 </a>
               </div>
             </div>
@@ -52,7 +58,7 @@ const ContactUsPage = () => {
               <div>
                 <h3 className="font-bold">Office Address</h3>
                 <p className="text-gray-600">
-                  10b Taiye Olowu Street, Lekki Phase 1, Lagos.
+                  89 Allen Avenue Ikeja Lagos, Nigeria
                 </p>
               </div>
             </div>

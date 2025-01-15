@@ -4,6 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { routerLinks } from "@/constants";
 // import { RenderIf } from "@/components/hoc/RenderIf";
 import MobileNavigation from "./mobileNav";
+import "./index.css";
 // import MenuDropdown from "./menuDropdown";
 // import { Avatar } from "@/components/core/Avatar/Avatar";
 
@@ -31,7 +32,11 @@ const Menu = () => {
                 <NavLink
                   key={link.url}
                   className={({ isActive }) =>
-                    `text-sm text-type ${isActive ? "font-bold" : "font-light"}`
+                    `nav-link text-sm  ${
+                      isActive
+                        ? "font-bold text-primary"
+                        : "font-light text-type"
+                    }`
                   }
                   to={link.url}
                 >
@@ -41,7 +46,7 @@ const Menu = () => {
                 <Link
                   smooth
                   key={link.url}
-                  className="text-sm text-type font-light"
+                  className="nav-link text-sm text-type font-light"
                   to={isHomeRoute ? link.url : `/${link?.url}`}
                 >
                   {link.name}
@@ -56,15 +61,15 @@ const Menu = () => {
               className="border-[0.5px] text-type h-5 w-5"
             />
 
-            <div className="hidden lg:flex items-center gap-x-2">
+            <div className="hidden lg:flex items-center gap-x-2 ">
               <Link
-                className="bg-[#E0EBF5] text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] border-secondary "
+                className="bg-[#E0EBF5]  text-secondary rounded-full py-[8px] px-[24px] text-sm cursor-pointer border-[0.5px] hover:text-white border-secondary "
                 to={isHomeRoute ? "#contact" : "/#contact"}
               >
                 Contact Us
               </Link>
               <button
-                className="py-[8px] px-[24px] text-sm rounded-full bg-primary text-white cursor-pointer"
+                className="py-[8px]  px-[24px] text-sm rounded-full bg-primary hover:text-white text-white cursor-pointer"
                 onClick={() => navigate("/service-offering")}
               >
                 Book a trip
