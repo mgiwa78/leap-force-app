@@ -8,8 +8,8 @@ const OurServices = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center">
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="capitalize text-[#9CA73A] text-2xl lg:text-5xl lg:leading-[66px] font-bold">
-              At Leapforce Travels, <br /> we turn journeys into unforgettable
-              experiences.
+              Check out all our Services, we make your trips around the world
+              super easy!
             </h1>
 
             <div className="flex justify-center md:justify-start">
@@ -28,6 +28,245 @@ const OurServices = () => {
               alt="home visa"
               className="h-4/5 lg:h-3/5 w-auto object-contain"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto py-[100px] space-y-[100px]">
+        <div>
+          <h1 className="text-center text-2xl md:text-[32px] md:leading-[51.2px] tracking-[10px] text-[#AEAFAA] pb-[80px]">
+            TOURS & PACKAGES
+          </h1>
+          <div className="flex flex-col gap-y-6">
+            <div className="flex items-center justify-center p-8">
+              <div
+                className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
+              >
+                <div className="relative">
+                  <div className="overflow-hidden h-full p-4">
+                    <div className="aspect-[5/6] relative">
+                      <img
+                        src="/assets/images/home/young couple.webp"
+                        alt="Visa assistance demonstration"
+                        className="w-full h-full object-cover absolute rounded-[32px]"
+                        style={{ transform: "rotate(360deg)" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+                    VACATION PACKAGE
+                  </h1>
+                  <div className="space-y-6 mb-[48px]">
+                    <h1 className="text-2xl text-primary md:text-3xl font-bold tracking-tight">
+                      Plan the perfect trip for your family, honeymoon, or next
+                      big adventure with our expertly curated tours.
+                    </h1>
+
+                    <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                      From breathtaking sights to unforgettable moments, we
+                      ensure every detail is taken care of. Skip the stress and
+                      let us handle your visa processing—hassle-free. Ready to
+                      make memories? Start your journey today!
+                    </p>
+                  </div>
+                  <CustomButton
+                    className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
+                    onClick={() => navigate("/service-offering")}
+                  >
+                    Get Started
+                  </CustomButton>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-8">
+              <div
+                className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
+              >
+                <div className="relative order-1 lg:order-2">
+                  <div className="overflow-hidden h-full p-4">
+                    <div className="aspect-[6/6] relative">
+                      <img
+                        src="/assets/images/home/customized package.webp"
+                        alt="Visa assistance demonstration"
+                        className="w-full h-full object-cover absolute rounded-[32px]"
+                        style={{ transform: "rotate(360deg)" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="order-2 lg:order-1">
+                  <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+                    CUSTOMIZED PACKAGE
+                  </h1>
+                  <div className="space-y-6 mb-[48px]">
+                    <h1 className="text-2xl text-primary md:text-3xl font-bold tracking-tight">
+                      Design your ideal getaway with packages tailored
+                      specifically to your needs and preferences.
+                    </h1>
+
+                    <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                      From relaxing retreats to adventurous journeys, we create
+                      the perfect travel experience just for you. Forget about
+                      the paperwork—we handle everything so you can focus on
+                      enjoying your trip. Your next adventure starts here!
+                    </p>
+                  </div>
+                  <CustomButton
+                    className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
+                    onClick={() => navigate("/service-offering")}
+                  >
+                    Get Started
+                  </CustomButton>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-8">
+              <div
+                className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
+              >
+                <div className="relative">
+                  <div className="overflow-hidden h-full p-4">
+                    <div className="aspect-[6/6] relative">
+                      <img
+                        src="/assets/images/home/cruise ship.webp"
+                        alt="Visa assistance demonstration"
+                        className="w-full h-full object-cover absolute rounded-[32px]"
+                        style={{ transform: "rotate(360deg)" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+                    CRUISE ACTIVITIES
+                  </h1>
+                  <div className="space-y-6 mb-[48px]">
+                    <h1 className="text-2xl text-primary md:text-3xl font-bold tracking-tight">
+                      Set sail on unforgettable cruises with our exclusive deals
+                      designed for relaxation and adventure
+                    </h1>
+
+                    <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                      Explore new destinations, unwind, and let us take care of
+                      all the details. Ready to set sail? Book your cruise now
+                      and start your journey!
+                    </p>
+                  </div>
+                  <CustomButton
+                    className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
+                    onClick={() => navigate("/service-offering")}
+                  >
+                    Get Started
+                  </CustomButton>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-center text-2xl md:text-[32px] md:leading-[51.2px] tracking-[10px] text-[#AEAFAA] pb-[80px]">
+            CORPORATE TRAVELS & CONFERENCES
+          </h1>
+
+          <div>
+            <div className="flex items-center justify-center p-8">
+              <div
+                className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
+              >
+                <div className="relative">
+                  <div className="overflow-hidden h-full p-4">
+                    <div className="aspect-[5/6] relative">
+                      <img
+                        src="/assets/images/home/confrences.webp"
+                        alt="Visa assistance demonstration"
+                        className="w-full h-full object-cover absolute rounded-[32px]"
+                        style={{ transform: "rotate(360deg)" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  {/* <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+                    VACATION PACKAGE
+                  </h1> */}
+                  <div className="space-y-6 mb-[48px]">
+                    <h1 className="text-2xl text-primary md:text-3xl font-bold tracking-tight">
+                      Simplify corporate travel with custom solutions for your
+                      events, conferences, and team-building activities
+                    </h1>
+
+                    <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                      We handle everything—from flight bookings to visa
+                      processing—so you can focus on what truly matters: your
+                      business. Ready to take your business global? Start your
+                      corporate journey today!
+                    </p>
+                  </div>
+                  <CustomButton
+                    className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
+                    onClick={() => navigate("/service-offering")}
+                  >
+                    Get Started
+                  </CustomButton>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="text-center text-2xl md:text-[32px] md:leading-[51.2px] tracking-[10px] text-[#AEAFAA] pb-[80px]">
+            CAR RENTALS & TRANSFERS
+          </h1>
+          <div className="flex items-center justify-center p-8">
+            <div
+              className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
+            >
+              <div className="relative order-1 lg:order-2">
+                <div className="overflow-hidden h-full p-4">
+                  <div className="aspect-[6/6] relative">
+                    <img
+                      src="/assets/images/home/carrides.webp"
+                      alt="Visa assistance demonstration"
+                      className="w-full h-full object-cover absolute rounded-[32px]"
+                      style={{ transform: "rotate(360deg)" }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="order-2 lg:order-1">
+                {/* <h1 className="pb-6 text-[#000A2340]/25 tracking-[5px] text-sm lg:text-base">
+                  CUSTOMIZED PACKAGE
+                </h1> */}
+                <div className="space-y-6 mb-[48px]">
+                  <h1 className="text-2xl text-primary md:text-3xl font-bold tracking-tight">
+                    Affordable & <br /> Convenient Ride for Every Journey
+                  </h1>
+
+                  <p className="text-gray-700 text-sm md:text-base max-w-xl">
+                    Your ride, your way. Choose from a range of vehicles
+                    tailored to your journey. Hit the road with
+                    confidence—explore our car rental options!
+                  </p>
+                </div>
+                <CustomButton
+                  className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
+                  onClick={() => navigate("/service-offering")}
+                >
+                  Get Started
+                </CustomButton>
+              </div>
+            </div>
           </div>
         </div>
       </div>
