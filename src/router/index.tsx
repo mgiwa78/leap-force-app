@@ -18,12 +18,14 @@ import ServiceOffering from "@/pages/services";
 import NotFound from "@/pages/not-found";
 import ErrorBoundary from "@/pages/error-boundary";
 import OurServices from "@/pages/our-services";
+import ScrollToTop from "@/components/layouts/scroll-top";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <ErrorBoundary>
+        <ScrollToTop />
         <AppLayout>
           <Outlet />
         </AppLayout>
