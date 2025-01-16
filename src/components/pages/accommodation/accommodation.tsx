@@ -29,7 +29,10 @@ export default function HomeAccomodation() {
                 </p>
                 <CustomButton
                   className="hidden md:inline-flex bg-secondary_1 shadow transition-colors hover:bg-primary/90 text-white text-sm lg:text-base rounded-full px-4 py-2 lg:px-[24px] lg:py-[12px]"
-                  onClick={() => navigate("/service-offering")}
+                  onClick={() => {
+                    localStorage.setItem("current-service", "flights");
+                    navigate("/service-offering");
+                  }}
                 >
                   Book an hotel
                 </CustomButton>

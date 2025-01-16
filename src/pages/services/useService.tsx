@@ -8,6 +8,9 @@ import { useMutation } from "@tanstack/react-query";
 
 export default function useService() {
   const { provideService } = carService;
+  const currentService = localStorage.getItem("current-service") || "flight";
+
+  console.log(currentService);
 
   const navigate = useNavigate();
 
@@ -98,5 +101,6 @@ export default function useService() {
     handleSubmitForm,
     errors,
     isLoading: serviceRequestStatus === "pending",
+    currentService,
   };
 }

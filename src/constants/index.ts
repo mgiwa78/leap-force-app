@@ -53,7 +53,7 @@ export const homeContent = [
 ];
 
 export const companyContent = [
-  { title: "About Us", href: "/" },
+  { title: "About Us", href: "/about" },
   { title: "Privacy Policy", href: "/" },
   { title: "Terms of Service", href: "" },
 ];
@@ -69,7 +69,7 @@ export const supportContent = [
   // },
   {
     title: "Contact Us",
-    href: "/contact-us",
+    href: "/#contact",
   },
 ];
 

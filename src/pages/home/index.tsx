@@ -82,7 +82,10 @@ const Home = () => {
               </h1>
 
               <CustomButton
-                onClick={() => navigate("/service-offering")}
+                onClick={() => {
+                  localStorage.setItem("current-service", "flight");
+                  navigate("/service-offering");
+                }}
                 className="bg-white border-none text-text2 rounded-full font-medium text-[10px] lg:text-base px-[12px] py-[6px] lg:py-3 lg:px-6"
               >
                 Plan your trip today

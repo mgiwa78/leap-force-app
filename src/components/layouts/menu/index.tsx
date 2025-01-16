@@ -7,7 +7,6 @@ import MobileNavigation from "./mobileNav";
 import "./index.css";
 // import MenuDropdown from "./menuDropdown";
 // import { Avatar } from "@/components/core/Avatar/Avatar";
-
 import { Icon } from "@iconify/react";
 
 const Menu = () => {
@@ -39,6 +38,9 @@ const Menu = () => {
                     }`
                   }
                   to={link.url}
+                  // onClick={() =>
+                  //   localStorage.setItem("current-service", "flight")
+                  // }
                 >
                   {link.name}
                 </NavLink>
@@ -70,7 +72,10 @@ const Menu = () => {
               </Link>
               <button
                 className="py-[8px]  px-[24px] text-sm rounded-full bg-primary hover:text-white text-white cursor-pointer"
-                onClick={() => navigate("/service-offering")}
+                onClick={() => {
+                  localStorage.setItem("current-service", "travels");
+                  navigate("/service-offering");
+                }}
               >
                 Book a trip
               </button>

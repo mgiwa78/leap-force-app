@@ -69,7 +69,10 @@ const AboutUsPage = () => {
 
             <div className="flex justify-center md:justify-start">
               <CustomButton
-                onClick={() => navigate("/service-offering")}
+                onClick={() => {
+                  localStorage.setItem("current-service", "travels");
+                  navigate("/service-offering");
+                }}
                 className="bg-secondary text-white rounded-full font-medium text-xs lg:text-base px-3 py-2 lg:py-3 lg:px-6"
               >
                 Learn more

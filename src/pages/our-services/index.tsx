@@ -63,12 +63,12 @@ const OurServices = () => {
             </h1>
 
             <div className="flex justify-center md:justify-start">
-              <CustomButton
+              {/* <CustomButton
                 onClick={() => navigate("/service-offering")}
                 className="bg-secondary text-white rounded-full font-medium text-xs lg:text-base px-3 py-2 lg:py-3 lg:px-6"
               >
                 Learn more
-              </CustomButton>
+              </CustomButton> */}
             </div>
           </div>
 
@@ -127,7 +127,10 @@ const OurServices = () => {
                     </div>
                     <CustomButton
                       className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
-                      onClick={() => navigate("/service-offering")}
+                      onClick={() => {
+                        localStorage.setItem("current-service", "travels");
+                        navigate("/service-offering");
+                      }}
                     >
                       Get Started
                     </CustomButton>
@@ -176,7 +179,10 @@ const OurServices = () => {
                     </div>
                     <CustomButton
                       className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
-                      onClick={() => navigate("/service-offering")}
+                      onClick={() => {
+                        localStorage.setItem("current-service", "travels");
+                        navigate("/service-offering");
+                      }}
                     >
                       Get Started
                     </CustomButton>
@@ -223,7 +229,10 @@ const OurServices = () => {
                     </div>
                     <CustomButton
                       className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
-                      onClick={() => navigate("/service-offering")}
+                      onClick={() => {
+                        localStorage.setItem("current-service", "travels");
+                        navigate("/service-offering");
+                      }}
                     >
                       Get Started
                     </CustomButton>
@@ -279,7 +288,10 @@ const OurServices = () => {
                     </div>
                     <CustomButton
                       className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
-                      onClick={() => navigate("/service-offering")}
+                      onClick={() => {
+                        localStorage.setItem("current-service", "corporate");
+                        navigate("/service-offering");
+                      }}
                     >
                       Get Started
                     </CustomButton>
@@ -331,7 +343,10 @@ const OurServices = () => {
                   </div>
                   <CustomButton
                     className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-sm font-medium"
-                    onClick={() => navigate("/service-offering")}
+                    onClick={() => {
+                      localStorage.setItem("current-service", "travels");
+                      navigate("/service-offering");
+                    }}
                   >
                     Get Started
                   </CustomButton>

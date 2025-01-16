@@ -4,6 +4,7 @@ import Dropdown from "@/components/core/Dropdown";
 import { Textarea } from "@headlessui/react";
 import useService from "./useService";
 import { genderOptions, serviceOfferingOptions } from "@/constants/visa";
+import ServiceHeading from "./heading";
 
 const ServiceOffering = () => {
   const {
@@ -13,18 +14,11 @@ const ServiceOffering = () => {
     handleSubmitForm,
     errors,
     isLoading,
+    currentService,
   } = useService();
   return (
-    <main className="max-w-6xl mx-auto pt-4 lg:pt-20">
-      <div className="space-y-2">
-        <h1 className="text-secondary_1 text-3xl md:text-[48px] md:leading-[57.6px] font-bold">
-          Start Planning Your Journey Now
-        </h1>
-        <p className="text-black text-sm md:text-base">
-          Fill in the details below, and let Leapforce Travels handle the rest.
-          It’s quick, easy, and stress-free!
-        </p>
-      </div>
+    <main className="max-w-6xl mx-auto pt-4 lg:pt-10">
+      <ServiceHeading service={currentService} />
 
       <form className="my-16" onSubmit={handleSubmitForm}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
