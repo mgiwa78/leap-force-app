@@ -58,13 +58,10 @@ const Home = () => {
   return (
     <main>
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={isInView ? { opacity: 1, scale: 1 } : {}}
-        transition={{
-          duration: 2,
-          scale: { type: "inertia", visualDuration: 2, bounce: 1 },
-        }}
         ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         style={{
           background: `linear-gradient(147.16deg, #9CA73A 25.24%, #1D81D5 104.7%)`,
           boxShadow: `0px 10px 10px -5px #1D81D4`,
