@@ -1,29 +1,29 @@
 const OurTeam = () => {
   const teamMembers = [
     {
-      name: "Prince David Alohan",
+      name: "Judah Ash",
       role: "CEO",
-      image: "/assets/images/support/alohan.webp", // Replace with actual image paths
+      image: "/assets/images/support/pro-picture.webp", // Replace with actual image paths
     },
     {
-      name: "Mattie Mayer",
+      name: "Haldi Monroe",
       role: "Co-founder",
-      image: "/assets/images/support/mayer.webp",
+      image: "/assets/images/support/pro-picture.webp",
     },
     {
-      name: "Mrs. Ora Gorczany",
+      name: "Justin Gield",
       role: "Product Marketer",
-      image: "/assets/images/support/gorcanzy.webp",
+      image: "/assets/images/support/pro-picture.webp",
     },
     {
-      name: "Craig Gerhold",
+      name: "Marvin Gerald",
       role: "Product Designer",
-      image: "/assets/images/support/craig.webp",
+      image: "/assets/images/support/pro-picture.webp",
     },
     {
-      name: "Kent Grant",
+      name: "Kevin Durant",
       role: "Product Manager",
-      image: "/assets/images/support/grant.webp",
+      image: "/assets/images/support/pro-picture.webp",
     },
   ];
 

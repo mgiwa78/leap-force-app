@@ -59,12 +59,12 @@ const ServiceOptions = () => {
             </CustomButton>
           </div>
           <div className="relative">
-            <div className=" bg-[#E1E1E1] rounded-[32px] overflow-hidden h-full p-4">
-              <div className=" aspect-[6/7] relative">
+            <div className="overflow-hidden h-full p-4">
+              <div className="h-full aspect-[5/6] relative">
                 <img
-                  src="/assets/images/home-car.webp"
+                  src="/assets/images/home/luxury cars.webp"
                   alt="Visa assistance demonstration"
-                  className="w-full h-full object-contain rounded-[24px] absolute"
+                  className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}
                 />
               </div>
@@ -81,7 +81,7 @@ const ServiceOptions = () => {
             <div className="overflow-hidden h-full p-4">
               <div className="aspect-[6/8] relative">
                 <img
-                  src="/assets/images/home/young couple.webp"
+                  src="/assets/images/home/honeymooners.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}
@@ -146,7 +146,7 @@ const ServiceOptions = () => {
             <div className="overflow-hidden h-full p-4">
               <div className="h-full aspect-[5/6] relative">
                 <img
-                  src="/assets/images/home/tourism group.webp"
+                  src="/assets/images/home/newtours.webp"
                   alt="Visa assistance demonstration"
                   className="w-full h-full object-cover absolute rounded-[32px]"
                   style={{ transform: "rotate(360deg)" }}

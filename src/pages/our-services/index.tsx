@@ -74,7 +74,7 @@ const OurServices = () => {
 
           <div className="flex image-container justify-center items-center h-full">
             <img
-              src="/assets/images/home/board.webp"
+              src="/assets/images/home/new board.webp"
               alt="home visa"
               className="h-4/5 lg:h-3/5 w-auto object-contain"
             />
@@ -88,7 +88,7 @@ const OurServices = () => {
             TOURS & PACKAGES
           </h1>
           <div className="flex flex-col gap-y-6">
-            <div className="flex items-center justify-center p-8">
+            <div className="flex items-center justify-center p-8 ">
               <div
                 className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
               >
@@ -97,7 +97,7 @@ const OurServices = () => {
                     <div className="overflow-hidden h-full p-4">
                       <div className="aspect-[5/6] relative">
                         <img
-                          src="/assets/images/home/young couple.webp"
+                          src="/assets/images/home/honeymoon.webp"
                           alt="Visa assistance demonstration"
                           className="w-full h-full object-cover absolute rounded-[32px]"
                           style={{ transform: "rotate(360deg)" }}
@@ -136,7 +136,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center p-8">
+            <div className="flex items-center justify-center p-8 bg-[#FAFBF5]">
               <div
                 className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
               >
@@ -145,7 +145,7 @@ const OurServices = () => {
                     <div className="overflow-hidden h-full p-4">
                       <div className="aspect-[6/6] relative">
                         <img
-                          src="/assets/images/home/customized package.webp"
+                          src="/assets/images/home/adventure new.webp"
                           alt="Visa assistance demonstration"
                           className="w-full h-full object-cover absolute rounded-[32px]"
                           style={{ transform: "rotate(360deg)" }}
@@ -185,7 +185,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center p-8">
+            <div className="flex items-center justify-center p-8 ">
               <div
                 className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
               >
@@ -240,7 +240,7 @@ const OurServices = () => {
           </h1>
 
           <div>
-            <div className="flex items-center justify-center p-8">
+            <div className="flex items-center justify-center p-8 bg-[#FAFBF5]">
               <div
                 className={` w-full grid md:grid-cols-2 gap-2 lg:gap-[97px] items-center transition-all duration-1000`}
               >
@@ -249,7 +249,7 @@ const OurServices = () => {
                     <div className="overflow-hidden h-full p-4">
                       <div className="aspect-[5/6] relative">
                         <img
-                          src="/assets/images/home/confrences.webp"
+                          src="/assets/images/home/travel.webp"
                           alt="Visa assistance demonstration"
                           className="w-full h-full object-cover absolute rounded-[32px]"
                           style={{ transform: "rotate(360deg)" }}
