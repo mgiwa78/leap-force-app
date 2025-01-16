@@ -56,10 +56,10 @@ const Menu = () => {
           </div>
 
           <div className="flex items-center gap-x-3">
-            <Icon
+            {/* <Icon
               icon="ph:magnifying-glass"
               className="border-[0.5px] text-type h-5 w-5"
-            />
+            /> */}
 
             <div className="hidden lg:flex items-center gap-x-2 ">
               <Link

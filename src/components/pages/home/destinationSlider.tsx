@@ -125,14 +125,14 @@ export default function DestinationCarousel() {
                   alt={destination.title}
                   className="w-full h-[200px] object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-[15px] text-text2 pb-3">
-                  {destination.title}
-                </h3>
 
                 <div className="w-full flex  justify-between">
-                  <p className="text-text2 text-xl font-bold">
+                  <h3 className="text-[15px] text-text2 ">
+                    {destination.title}
+                  </h3>
+                  {/* <p className="text-text2 text-xl font-bold">
                     {destination.price}
-                  </p>
+                  </p> */}
                   <div className="flex items-center gap-1">
                     <span className="text-primary text-xs">★</span>
                     <span className="font-medium text-xs">
