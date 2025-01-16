@@ -52,7 +52,7 @@ const AboutUsPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

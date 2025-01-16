@@ -13,7 +13,9 @@ const AppLayout = ({ children }: IAppLayout) => {
         <Menu />
         <div className="mt-4 flex-grow">{children}</div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </main>
   );
 };

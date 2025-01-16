@@ -36,7 +36,7 @@ const AnimatedSection = ({
   animation?: any;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <motion.div
@@ -56,7 +56,7 @@ const Home = () => {
   const isInView = useInView(ref, { once: false });
 
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -111,19 +111,19 @@ const Home = () => {
       </motion.div>
 
       <div className="bg-white min-h-[700px]">
-        <div className="max-w-5xl mx-auto py-[100px]">
-          <AnimatedSection>
+        <AnimatedSection>
+          <div className="max-w-5xl mx-auto py-[100px]">
             <DestinationCarousel />
-          </AnimatedSection>
-        </div>
+          </div>
+        </AnimatedSection>
       </div>
 
       <div className="bg-[#FAFAFA]  ">
-        <div className="max-w-5xl mx-auto py-[100px]">
-          <AnimatedSection animation={horizontalVariants}>
+        <AnimatedSection animation={horizontalVariants}>
+          <div className="max-w-5xl mx-auto py-[100px]">
             <HomeAccomodation />
-          </AnimatedSection>
-        </div>
+          </div>
+        </AnimatedSection>
       </div>
 
       <div className="bg-white">
@@ -140,26 +140,20 @@ const Home = () => {
         </AnimatedSection>
       </div>
 
-      <div className="">
+      <AnimatedSection>
         <div className="max-w-5xl mx-auto py-[100px]">
-          <AnimatedSection>
-            <Testimonials />
-          </AnimatedSection>
+          <Testimonials />
         </div>
-      </div>
+      </AnimatedSection>
 
-      <div className="max-w-5xl mx-auto">
-        <AnimatedSection>
+      <AnimatedSection>
+        <div className="max-w-5xl mx-auto">
           <Newsletter />
-        </AnimatedSection>
-      </div>
-
-      <div className="">
-        <div className="max-w-5xl mx-auto py-[100px]">
-          <AnimatedSection>
-            <Dreams />
-          </AnimatedSection>
         </div>
+      </AnimatedSection>
+
+      <div className="max-w-5xl mx-auto py-[100px]">
+        <Dreams />
       </div>
 
       <div id="contact">

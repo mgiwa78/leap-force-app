@@ -37,7 +37,7 @@ const Footer = () => {
       <motion.div className="grid grid-cols-1 md:grid-cols-5 gap-10">
         <motion.div
           variants={item}
-          className="col-span-1 lg:col-span-2 flex flex-col gap-6"
+          className="col-span-1 md:col-span-2 flex flex-col gap-6"
         >
           <NavLink to="/">
             <div className="bg-white rounded-2xl w-[120px] h-[120px] flex items-center justify-center">
