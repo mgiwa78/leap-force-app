@@ -258,7 +258,7 @@ const OurServices = () => {
                     <div className="overflow-hidden h-full p-4">
                       <div className="aspect-[5/6] relative">
                         <img
-                          src="/assets/images/home/travel.webp"
+                          src="/assets/images/home/corp travel.webp"
                           alt="Visa assistance demonstration"
                           className="w-full h-full object-cover absolute rounded-[32px]"
                           style={{ transform: "rotate(360deg)" }}
