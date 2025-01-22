@@ -111,48 +111,48 @@ export const faqs = [
 export const testimonials = [
   {
     name: "jeff_dev",
-    text: "I had an amazing experience with 315 travel and Tours! They handled my visa, flights and accommodation seamlessly. Their team was super efficient, making the whole process stress-free. Communication was great, and they delivered exactly what they promised. I highly recommend them",
+    text: "I had an amazing experience with Leapforce! They handled my visa, flights and accommodation seamlessly. I highly recommend them",
     quote: "./assets/images/home/blue-quotes.svg",
   },
   {
     name: "Adegoke Haryomi",
-    text: "I highly recommend 315! Their service is absolutely top-notch. They delivered on their promise, and my vis processed exactly on time. Their team took care of all my travel arrangements, making the entire experience completely stress0free. I give them a full 100% satisfaction rating",
+    text: "I highly recommend Leapforce! Their service is absolutely top-notch. They delivered on their promise, and my vis processed exactly on time. Their team took care of all my travel arrangements, making the entire experience completely stress0free. I give them a full 100% satisfaction rating",
     quote: "./assets/images/home/white-quotes.svg",
   },
   {
-    name: "King Valentino",
-    text: "They have fast and good communication skills. They were able to assist me with my S.A visa application and it came out faster than i expected. I will be coming back to 315 services again.",
+    name: "Queeen Valentino",
+    text: "They have fast and good communication skills. They were able to assist me with my S.A visa application and it came out faster than i expected. I will be coming back to Leapforce services again.",
     quote: "./assets/images/home/blue-quotes.svg",
   },
   {
-    name: "Chioma Eze",
+    name: "Chioma Bryan",
     text: "Tested and trusted",
     quote: "./assets/images/home/blue-quotes.svg",
   },
   {
-    name: "Ezie Ellis",
+    name: "Ezie Ellias",
     text: "Thank you for your visa assistance, your service was top notch and professional.",
     quote: "./assets/images/home/white-quotes.svg",
   },
   {
-    name: "Mini Dom",
-    text: "Thanks to 315 travels and tours for my schengen visa",
+    name: "Mini Dominic",
+    text: "Thanks to Leapforce travels and tours for my schengen visa",
     quote: "./assets/images/home/blue-quotes.svg",
   },
 
   {
-    name: "Builders Foundation",
-    text: "They handled my Visa and that of my brother with care and we're intentional about us. They were fast too. Thank you 315",
+    name: "Wizard Foundation",
+    text: "They were intentional about us. They were fast too. Thank you Leapforce",
     quote: "./assets/images/home/blue-quotes.svg",
   },
   {
-    name: "Ella Law",
-    text: "Tested & Trusted with 315",
+    name: "Ella Lawrence",
+    text: "Tested & Trusted!",
     quote: "./assets/images/home/white-quotes.svg",
   },
 
   {
-    name: "Moyo Awodeji",
+    name: "Muyi Awolowo",
     text: "Amazing service. Professional driver. Would definitely recommend",
     quote: "./assets/images/home/blue-quotes.svg",
   },

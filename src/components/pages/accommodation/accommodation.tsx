@@ -34,7 +34,7 @@ export default function HomeAccomodation() {
                     navigate("/service-offering");
                   }}
                 >
-                  Book an hotel
+                  Book a hotel
                 </CustomButton>
               </div>
             </div>

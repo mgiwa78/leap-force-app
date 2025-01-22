@@ -19,7 +19,7 @@ const HotelBooking = () => {
     <main className="max-w-[900px] mx-auto px-4 lg:px-0">
       <div className="space-y-[18px] mb-[66px]">
         <h2 className="text-2xl lg:text-4xl font-semibold text-secondary">
-          Book an Hotel
+          Book a Hotel
         </h2>
         <p className="w-full md:w-3/5 text-sm lg:text-base text-black">
           Let us help you find the best hotel for your upcoming trip. <br />
