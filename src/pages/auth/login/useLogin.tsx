@@ -57,9 +57,9 @@ export default function useLogin() {
     mutationFn: login,
     onSuccess: async (response: any) => {
       const token = response?.data?.payload?.token;
-      localStorage.setItem("315-token", token);
+      localStorage.setItem("leapforce-token", token);
       localStorage.setItem(
-        "315-profile",
+        "leapforce-profile",
         JSON.stringify(response?.data?.payload)
       );
       toast.success("Login successful");
