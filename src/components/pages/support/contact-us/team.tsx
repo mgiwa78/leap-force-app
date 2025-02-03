@@ -1,29 +1,24 @@
 const OurTeam = () => {
   const teamMembers = [
     {
-      name: "Judah Ash",
+      name: "Oluwole Popoola",
       role: "CEO",
-      image: "/assets/images/support/pro-picture.webp", // Replace with actual image paths
+      image: "/assets/images/support/ceo.JPG", // Replace with actual image paths
     },
     {
-      name: "Haldi Monroe",
-      role: "Co-founder",
-      image: "/assets/images/support/pro-picture.webp",
+      name: "Olawunmi Akomolafe",
+      role: "Business Development Manager",
+      image: "/assets/images/support/biz dev.JPG",
     },
     {
-      name: "Justin Gield",
-      role: "Product Marketer",
-      image: "/assets/images/support/pro-picture.webp",
+      name: "Anthony Ibekwe",
+      role: "Travel Consultant",
+      image: "/assets/images/support/travel consultant.JPG",
     },
     {
-      name: "Marvin Gerald",
-      role: "Product Designer",
-      image: "/assets/images/support/pro-picture.webp",
-    },
-    {
-      name: "Kevin Durant",
-      role: "Product Manager",
-      image: "/assets/images/support/pro-picture.webp",
+      name: "Promise Uche",
+      role: "Graphics Designer & Digital Marketer",
+      image: "/assets/images/support/graphics designer.JPG",
     },
   ];
 
@@ -39,7 +34,7 @@ const OurTeam = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {teamMembers.map((member) => (
           <div
             key={member.name}
