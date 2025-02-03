@@ -19,6 +19,8 @@ import NotFound from "@/pages/not-found";
 import ErrorBoundary from "@/pages/error-boundary";
 import OurServices from "@/pages/our-services";
 import ScrollToTop from "@/components/layouts/scroll-top";
+import PrivacyPolicy from "@/pages/support/privacy-policy";
+import TermsOfService from "@/pages/support/terms";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +53,8 @@ const router = createBrowserRouter([
       // { path: "/visa-application", element: <VisaApplicationPage /> },
       { path: "/about", element: <AboutUsPage /> },
       { path: "/services", element: <OurServices /> },
+      { path: "/terms", element: <TermsOfService /> },
+      { path: "/privacy-policy", element: <PrivacyPolicy /> },
       { path: "*", element: <NotFound /> },
     ],
   },

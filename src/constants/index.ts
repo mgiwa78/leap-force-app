@@ -54,8 +54,8 @@ export const homeContent = [
 
 export const companyContent = [
   { title: "About Us", href: "/about" },
-  { title: "Privacy Policy", href: "/" },
-  { title: "Terms of Service", href: "" },
+  { title: "Privacy Policy", href: "/privacy-policy" },
+  { title: "Terms of Service", href: "/terms" },
 ];
 
 export const supportContent = [
