@@ -69,7 +69,9 @@ const Footer = () => {
             {socialLinks?.map((social, index) => (
               <motion.a
                 key={index + 1333}
-                className="rounded-full p-[6px] border-[0.4px] border-[#9CA73A]"
+                className="rounded-full p-[6px] border-[0.4px] border-[#9CA73A] cursor-pointer"
+                target="_blank"
+                href={social.url}
               >
                 <Icon
                   width="12"

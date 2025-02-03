@@ -23,26 +23,16 @@ export const companyDetails = [
 ];
 
 export const socialLinks = [
-  {
-    icon: "cib:linkedin",
-    url: "",
-  },
+
   {
     icon: "cib:facebook",
-    url: "",
+    url: "https://web.facebook.com/profile.php?id=100087667636712",
   },
   {
     icon: "cib:instagram",
-    url: "",
+    url: "http://instagram.com/leapforcetravels",
   },
-  {
-    icon: "cib:twitter",
-    url: "",
-  },
-  {
-    icon: "cib:youtube",
-    url: "",
-  },
+ 
 ];
 
 export const homeContent = [
