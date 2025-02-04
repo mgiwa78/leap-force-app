@@ -156,7 +156,7 @@ const Home = () => {
         <Dreams />
       </div>
 
-      <div id="contact">
+      <div>
         <div className="max-w-5xl mx-auto py-[100px]">
           <AnimatedSection animation={horizontalVariants}>
             <ContactUsPage />

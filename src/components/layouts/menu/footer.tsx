@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import {
@@ -160,7 +161,9 @@ const Footer = () => {
                 whileHover={{ x: 5 }}
                 className="text-white text-xs font-normal"
               >
-                <NavLink to={item?.href}>{item.title}</NavLink>
+                <Link smooth key={item.href} to={item?.href}>
+                  {item.title}
+                </Link>
               </motion.li>
             ))}
           </ul>

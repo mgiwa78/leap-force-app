@@ -4,7 +4,7 @@ import ContactUsForm from "@/components/pages/support/contact-us/contact-form";
 
 const ContactUsPage = () => {
   return (
-    <main className="">
+    <main id="contact" className="">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
         <div className="col-span-1">
           <div className="pb-[65px] text-primary">
