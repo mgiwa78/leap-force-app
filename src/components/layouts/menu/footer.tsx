@@ -91,22 +91,7 @@ const Footer = () => {
               );
             })}
           </motion.div>
-          {/* <motion.div variants={item} className="flex flex-col gap-4">
-            {companyDetails?.map((detail) => (
-              <div
-                key={detail.text}
-                className="flex text-xs items-center gap-3"
-              >
-                <Icon
-                  icon={detail.icon}
-                  width="12"
-                  height="12"
-                  className="text-white"
-                />
-                <span className="text-white">{detail.text}</span>
-              </div>
-            ))}
-          </motion.div> */}
+
           <motion.div className="flex gap-x-4">
             {socialLinks?.map((social, index) => (
               <motion.a
@@ -138,7 +123,8 @@ const Footer = () => {
                 whileHover={{ x: 5 }}
                 className="text-white text-xs font-normal"
               >
-                <NavLink to={item?.href}>{item?.title}</NavLink>
+                {item?.title}
+                {/* <NavLink to={item?.href}>{item?.title}</NavLink> */}
               </motion.li>
             ))}
           </ul>
