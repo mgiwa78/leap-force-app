@@ -17,13 +17,25 @@ export const companyDetails = [
   },
   {
     icon: "ph:phone-call",
-    text: "+234 908 372 6264",
+    text: "+2348186459368",
+    type: "phone",
+  },
+  {
+    icon: "ph:phone-call",
+    text: "+2348186459371",
     type: "phone",
   },
 ];
 
 export const socialLinks = [
-
+  {
+    icon: "cib:snapchat",
+    url: "https://snapchat.com/t/evHFxttK",
+  },
+  {
+    icon: "cib:twitter",
+    url: "https://x.com/leapforcetravel?s=21",
+  },
   {
     icon: "cib:facebook",
     url: "https://web.facebook.com/profile.php?id=100087667636712",
@@ -32,7 +44,6 @@ export const socialLinks = [
     icon: "cib:instagram",
     url: "http://instagram.com/leapforcetravels",
   },
- 
 ];
 
 export const homeContent = [
