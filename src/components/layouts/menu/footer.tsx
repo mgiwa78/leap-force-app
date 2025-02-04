@@ -50,6 +50,48 @@ const Footer = () => {
             </div>
           </NavLink>
           <motion.div variants={item} className="flex flex-col gap-4">
+            {companyDetails?.map((detail) => {
+              const renderText = () => {
+                if (detail.type === "link") {
+                  return (
+                    <a
+                      href={`mailto:${detail.text}`}
+                      className="text-white underline"
+                    >
+                      {detail.text}
+                    </a>
+                  );
+                }
+                if (detail.type === "phone") {
+                  return (
+                    <a
+                      href={`tel:${detail.text}`}
+                      className="text-white underline"
+                    >
+                      {detail.text}
+                    </a>
+                  );
+                }
+                return <span className="text-white">{detail.text}</span>;
+              };
+
+              return (
+                <div
+                  key={detail.text}
+                  className="flex text-xs items-center gap-3"
+                >
+                  <Icon
+                    icon={detail.icon}
+                    width="12"
+                    height="12"
+                    className="text-white"
+                  />
+                  {renderText()}
+                </div>
+              );
+            })}
+          </motion.div>
+          {/* <motion.div variants={item} className="flex flex-col gap-4">
             {companyDetails?.map((detail) => (
               <div
                 key={detail.text}
@@ -64,7 +106,7 @@ const Footer = () => {
                 <span className="text-white">{detail.text}</span>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
           <motion.div className="flex gap-x-4">
             {socialLinks?.map((social, index) => (
               <motion.a

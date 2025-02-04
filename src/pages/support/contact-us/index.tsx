@@ -20,11 +20,11 @@ const ContactUsPage = () => {
               <div>
                 <h3 className="font-bold">WhatsApp</h3>
                 <a
-                  href="https://wa.me/2349083726264"
+                  href="https://wa.me/2348186459368"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +2349083726264
+                  +2348186459368
                 </a>
               </div>
             </div>
@@ -33,7 +33,7 @@ const ContactUsPage = () => {
               <Icon icon="ph:phone-call" width="24" height="24" />
               <div>
                 <h3 className="font-bold">Call/SMS</h3>
-                <a href="tel:+2349083726264">+2349083726264</a>
+                <a href="tel:+2348186459368">+2348186459368</a>
               </div>
             </div>
 
