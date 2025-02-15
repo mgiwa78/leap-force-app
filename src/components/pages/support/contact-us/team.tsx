@@ -16,9 +16,9 @@ const OurTeam = () => {
       image: "/assets/images/support/travel consultant.JPG",
     },
     {
-      name: "Promise Uche",
+      name: "Ellu Ebenezer Imowedeme",
       role: "Graphics Designer & Digital Marketer",
-      image: "/assets/images/support/graphics designer.JPG",
+      image: "/assets/images/support/ellu.jpg",
     },
   ];
 

@@ -17,12 +17,7 @@ export const companyDetails = [
   },
   {
     icon: "ph:phone-call",
-    text: "+2348186459368",
-    type: "phone",
-  },
-  {
-    icon: "ph:phone-call",
-    text: "+2348186459371",
+    text: "+2348164406011",
     type: "phone",
   },
 ];
