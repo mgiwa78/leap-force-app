@@ -54,7 +54,7 @@ const ServiceOptions = () => {
             <CustomButton
               className="bg-secondary_1 hover:bg-secondary_1/90 text-white transition-colors duration-200 rounded-full px-8 py-3 text-base font-medium"
               onClick={() => {
-                localStorage.setItem("current-service", "travels");
+                localStorage.setItem("current-service", "car-rental");
                 navigate("/service-offering");
               }}
             >

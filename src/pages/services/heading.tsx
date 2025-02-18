@@ -12,6 +12,16 @@ const serviceText: {
       "Whether it's a scenic cruise, a customized tour, or a relaxing vacation package, we tailor every detail to match your dream getaway.",
     image: "/assets/images/support/service vacation.webp",
   },
+  "car-rental": {
+    text: (
+      <p>
+        Drive Your Adventure, <br /> Your Way!
+      </p>
+    ),
+    subText:
+      "Choose from a wide range of vehicles to suit your needs, whether you're looking for a compact city car or a spacious SUV for a family road trip. Enjoy flexibility, convenience, and great rates with our car rental options.",
+    image: "/assets/images/support/road trip.jpg",
+  },
   flight: {
     text: (
       <p>
@@ -42,7 +52,6 @@ const serviceText: {
 };
 
 const ServiceHeading = ({ service }: { service: string }) => {
-  console.log(service);
   const selectedService = serviceText[service];
   console.log(selectedService);
   return (
